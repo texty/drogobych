@@ -3,10 +3,17 @@
  */
 
 var icon = L.icon({
+    iconUrl: 'img/tree.png',
+    iconSize:     [30, 40], // size of the icon
+    iconAnchor:   [22, 40], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-3, -40] // point from which the popup should open relative to the iconAnchor
+});
+
+var iconRemoved = L.icon({
     iconUrl: 'img/icon.png',
     iconSize:     [30, 40], // size of the icon
     iconAnchor:   [22, 40], // point of the icon which will correspond to marker's location
-    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+    popupAnchor:  [5, -40] // point from which the popup should open relative to the iconAnchor
 });
 
 
@@ -21,6 +28,9 @@ var CartoDB_Positron = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fast
     maxZoom: 18
 
 }).addTo(mymap);
+
+var cuttedTrees = new L.LayerGroup();
+var removedTrees = new L.LayerGroup();
 
 
 d3.csv("data/cutted.csv", function(data) {
@@ -37,16 +47,52 @@ d3.csv("data/cutted.csv", function(data) {
     var points = L.layerGroup();
 
     data.forEach(function(d){
-        L.marker([d.latitude, d.longitude],  {icon: icon}).addTo(mymap);
+        L.marker([d.latitude, d.longitude],  {icon: icon} ).addTo(cuttedTrees)
+            .bindPopup(d.addressLocality + ", " + d.streetAddress).openPopup();
+
     });
-
-
-
-
 
 });
 
 
 
+d3.csv("data/removed.csv", function(data) {
 
+    data.forEach(function(d){
+        d.longitude = +d.longitude;
+        d.latitude = +d.latitude;
+    });
 
+    var nestedData = d3.nest()
+        .key(function(d) { return d.actIdentifier; })
+        .entries(data);
+
+    var points = L.layerGroup();
+
+    data.forEach(function(d){
+        L.marker([d.latitude, d.longitude],  {icon: iconRemoved } ).addTo(removedTrees)
+            .bindPopup(d.addressLocality + ", " + d.streetAddress).openPopup();
+    });
+
+});
+
+cuttedTrees.addTo(mymap);
+// removedTrees.addTo(mymap);
+
+const checkCutted = document.getElementById('checkCutted');
+checkCutted.addEventListener('change', function(e) {
+    if (e.target.checked) {
+        cuttedTrees.addTo(mymap);
+} else {
+        mymap.removeLayer(cuttedTrees);
+}
+});
+
+const checkRemoved = document.getElementById('checkRemoved');
+checkRemoved.addEventListener('change', function(e) {
+    if (e.target.checked) {
+        removedTrees.addTo(mymap);
+    } else {
+        mymap.removeLayer(removedTrees);
+    }
+});

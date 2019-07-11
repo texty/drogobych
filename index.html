@@ -48,7 +48,7 @@
         crossorigin=""></script>
 
 <!-- Links -->
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic|IBM+Plex+Sans|Montserrat|Noto+Sans&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <link rel="stylesheet" href="css/styles.css">
 
@@ -74,35 +74,60 @@
 
 <main>
 
-<div id="map"></div>
+    <div id="col-1">
+        <form>
+            <label class="checkbox-inline" style="background-color: #eeeeee;">
+                <input id="checkCutted" type="checkbox" value="" checked >Обрізані дерева
+            </label>
+            <label class="checkbox-inline" style=" background-color: #EEEEEE;">
+                <input id="checkRemoved" type="checkbox" value="">Видалені дерева
+            </label>
+        </form>
 
+        <div id="map"></div>
+    </div>
 
 <!-- Форма, що відправляє дані в Google Sheets -->
 <form id="test-form">
 
     <div>
-        <label>Field 1</label>
-        <input type="text" name="field_id" placeholder="id"/>
+        <label>Ім'я</label><br>
+        <input type="text" name="field_name" placeholder="ПІБ"/>
     </div>
 
     <div>
-        <label>Field 2</label>
-        <input type="text" name="field_tree" placeholder="tree"/>
+        <label>Адреса проживання</label><br>
+        <input type="text" name="field_address" placeholder="назва вулиці, будинок"/>
     </div>
 
     <div>
-        <label>Field 3</label>
-        <input type="text" name="field_latitude" placeholder="latitude"/>
+        <label>Телефон</label><br>
+        <input type="text" name="field_phone" placeholder=""/>
     </div>
 
     <div>
-        <label>Field 4</label>
-        <input type="text" name="field_longitude" placeholder="longitude"/>
+        <label>Адреса електронної пошти</label><br>
+        <input type="text" name="field_mail" placeholder="e-mail"/>
     </div>
 
     <div>
-        <label>Field 5</label>
-        <input type="text" name="field_address" placeholder="address"/>
+        <label>Адреса висадження дерева <br>(вкажіть вулицю, будинок і опишіть місце де висадити дерево)</label><br>
+        <input type="text" name="field_tree_address" placeholder="назва вулиці, будинок"/>
+    </div>
+
+    <div>
+        <label>Виберіть дерево виду дерева з випадаючого списку</label><br>
+        <select name="field_dropdown">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+    </div>
+
+    <div>
+        <label>Коментар</label><br>
+        <textarea name="field_comment" cols="40" rows="5"></textarea>
     </div>
 
     <div>

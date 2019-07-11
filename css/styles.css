@@ -281,8 +281,7 @@
       font-size: 0 !important; } }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
+  font-family: 'Montserrat', sans-serif;
   padding: 0; }
 
 /*---------- button -------*/
@@ -310,7 +309,37 @@ main {
   display: grid;
   grid-template-columns: 70% 30%; }
 
+form {
+  margin-top: 20px;
+  font-size: 16px; }
+  form input[type=checkbox] {
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(1.5);
+    /* IE */
+    -moz-transform: scale(1.5);
+    /* FF */
+    -webkit-transform: scale(1.5);
+    /* Safari and Chrome */
+    -o-transform: scale(1.5);
+    /* Opera */
+    transform: scale(1.5);
+    padding: 10px;
+    margin-right: 5px; }
+  form .checkbox-inline {
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 50px; }
+
 #map {
-  height: 98vh; }
+  border: 1px solid lightgrey;
+  margin-top: 20px;
+  height: 90vh; }
+
+#test-form {
+  margin-left: 10px; }
+  #test-form div {
+    margin-bottom: 20px; }
+  #test-form input {
+    margin-top: 5px; }
 
 /*# sourceMappingURL=styles.css.map */
