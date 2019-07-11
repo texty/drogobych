@@ -93,8 +93,16 @@ form {
     margin-bottom:20px;
   }
 
-  input {
+  input, textarea, select[name='field_dropdown'] {
     margin-top:5px;
+    padding:5px;
+    //border:none;
+    //background-color: #f2f2f2;
+
+  }
+
+  select[name='field_dropdown'] {
+    padding:5px;
   }
 }
 
