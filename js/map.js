@@ -48,7 +48,7 @@ d3.csv("data/cutted.csv", function(data) {
 
     data.forEach(function(d){
         L.marker([d.latitude, d.longitude],  {icon: icon} ).addTo(cuttedTrees)
-            .bindPopup("<img style='width:100%; margin:auto;' src='https://png.pngtree.com/png_detail/20181019/mango-treegreenwood-png-clipart_3012293.png'/> <br>" + d.addressLocality + ", " + d.streetAddress);
+            .bindPopup("<img style='width:60%; margin:0 20%;' src='img/icon.png'/> <br>" + d.addressLocality + ", " + d.streetAddress);
 
     });
 
@@ -71,7 +71,7 @@ d3.csv("data/removed.csv", function(data) {
 
     data.forEach(function(d){
         L.marker([d.latitude, d.longitude],  {icon: iconRemoved } ).addTo(removedTrees)
-            .bindPopup("<img style='width:100%; margin:auto;' src='https://png.pngtree.com/png_detail/20181019/mango-treegreenwood-png-clipart_3012293.png'/> <br>" + d.addressLocality + ", " + d.streetAddress);
+            .bindPopup("<img style='width:60%; margin:0 20%;' src='img/icon.png'/> <br>" + d.addressLocality + ", " + d.streetAddress);
     });
 
 });
