@@ -48,7 +48,7 @@ d3.csv("data/cutted.csv", function(data) {
 
     data.forEach(function(d){
         L.marker([d.latitude, d.longitude],  {icon: icon} ).addTo(cuttedTrees)
-            .bindPopup("<img style='width:100%; margin:auto;' src='https://png.pngtree.com/png_detail/20181019/mango-treegreenwood-png-clipart_3012293.png'/> <br>" + d.addressLocality + ", " + d.streetAddress).openPopup();
+            .bindPopup("<img style='width:100%; margin:auto;' src='https://png.pngtree.com/png_detail/20181019/mango-treegreenwood-png-clipart_3012293.png'/> <br>" + d.addressLocality + ", " + d.streetAddress);
 
     });
 
@@ -71,13 +71,13 @@ d3.csv("data/removed.csv", function(data) {
 
     data.forEach(function(d){
         L.marker([d.latitude, d.longitude],  {icon: iconRemoved } ).addTo(removedTrees)
-            .bindPopup("<img style='width:100%; margin:auto;' src='https://png.pngtree.com/png_detail/20181019/mango-treegreenwood-png-clipart_3012293.png'/> <br>" + d.addressLocality + ", " + d.streetAddress).openPopup();
+            .bindPopup("<img style='width:100%; margin:auto;' src='https://png.pngtree.com/png_detail/20181019/mango-treegreenwood-png-clipart_3012293.png'/> <br>" + d.addressLocality + ", " + d.streetAddress);
     });
 
 });
 
 cuttedTrees.addTo(mymap);
-// removedTrees.addTo(mymap);
+// removedTrees.addTo(mymap)
 
 const checkCutted = document.getElementById('checkCutted');
 checkCutted.addEventListener('change', function(e) {
