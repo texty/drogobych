@@ -73,8 +73,6 @@
 </div>
 
 <main>
-
-    <div id="col-1">
         <form>
             <label class="checkbox-inline" style="background-color: #eeeeee;">
                 <input id="checkCutted" type="checkbox" value="" checked >Обрізані дерева
@@ -85,11 +83,10 @@
         </form>
 
         <div id="map"></div>
-    </div>
+
 
 <!-- Форма, що відправляє дані в Google Sheets -->
 <form id="test-form">
-
     <div>
         <label>Ім'я</label><br>
         <input type="text" name="field_name" placeholder="ПІБ"/>
@@ -112,7 +109,7 @@
 
     <div>
         <label>Адреса висадження дерева <br>(вкажіть вулицю, будинок і опишіть місце де висадити дерево)</label><br>
-        <input type="text" name="field_tree_address" placeholder="назва вулиці, будинок"/>
+        <textarea name="field_tree_address" cols="40" rows="5"></textarea>
     </div>
 
     <div>

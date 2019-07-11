@@ -307,9 +307,12 @@ body {
     transform: translateY(-15px); } }
 main {
   display: grid;
-  grid-template-columns: 70% 30%; }
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 50px auto; }
 
 form {
+  grid-column: 1/2;
+  grid-row: 1/2;
   margin-top: 20px;
   font-size: 16px; }
   form input[type=checkbox] {
@@ -331,11 +334,15 @@ form {
     margin-right: 50px; }
 
 #map {
+  grid-column: 1/2;
+  grid-row: 2/3;
   border: 1px solid lightgrey;
   margin-top: 20px;
   height: 90vh; }
 
 #test-form {
+  grid-column: 2/3;
+  grid-row: 2/3;
   margin-left: 10px; }
   #test-form div {
     margin-bottom: 20px; }
