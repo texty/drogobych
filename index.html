@@ -104,12 +104,12 @@
 
     <div>
         <label>Адреса електронної пошти</label><br>
-        <input type="text" name="field_mail" placeholder=""/>
+        <input type="email" pattern=".+@.+" required name="field_mail" placeholder="" />
     </div>
 
     <div>
         <label>Адреса висадження дерева <br>(вкажіть вулицю, будинок і опишіть місце де висадити дерево)</label><br>
-        <textarea name="field_tree_address" cols="40" rows="5"></textarea>
+        <textarea name="field_tree_address" ></textarea>
     </div>
 
     <div>
@@ -124,11 +124,11 @@
 
     <div>
         <label>Коментар</label><br>
-        <textarea name="field_comment" cols="40" rows="5"></textarea>
+        <textarea name="field_comment" ></textarea>
     </div>
 
     <div>
-        <button type="submit" id="submit-form">Submit</button>
+        <button type="submit" id="submit-form">Надіслати</button>
     </div>
 
 </form>
