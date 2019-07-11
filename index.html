@@ -86,30 +86,30 @@
 
 
 <!-- Форма, що відправляє дані в Google Sheets -->
-<form id="test-form">
+<form id="test-form" name="myForm">
     <div>
         <label>Ім'я</label><br>
-        <input type="text" name="field_name" placeholder=""/>
+        <input class="required" type="text" required name="field_name" placeholder=""/>
     </div>
 
     <div>
         <label>Адреса проживання</label><br>
-        <input type="text" name="field_address" placeholder=""/>
+        <input class="required" type="text"  required name="field_address" placeholder=""/>
     </div>
 
     <div>
         <label>Телефон</label><br>
-        <input type="text" name="field_phone" placeholder=""/>
+        <input class="required" type="text"  required name="field_phone" placeholder=""/>
     </div>
 
     <div>
         <label>Адреса електронної пошти</label><br>
-        <input type="email" pattern=".+@.+" required name="field_mail" placeholder="" />
+        <input class="required" type="email" required pattern=".+@.+"  name="field_mail" placeholder="" />
     </div>
 
     <div>
         <label>Адреса висадження дерева <br>(вкажіть вулицю, будинок і опишіть місце де висадити дерево)</label><br>
-        <textarea name="field_tree_address" ></textarea>
+        <textarea class="required" required name="field_tree_address" ></textarea>
     </div>
 
     <div>
@@ -124,7 +124,7 @@
 
     <div>
         <label>Коментар</label><br>
-        <textarea name="field_comment" ></textarea>
+        <textarea name="field_comment"></textarea>
     </div>
 
     <div>
