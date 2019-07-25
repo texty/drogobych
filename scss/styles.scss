@@ -167,3 +167,67 @@ button#submit-form:hover {
 
 
 
+#partners-logo {
+  text-align: center;
+  //color: $dark;
+  //background-color: white;
+  display: flex;
+  flex-direction: column;
+  width:50%;
+  margin:50px auto;
+  align-items:flex-start;
+  align-content:flex-start;
+  @media (max-width:825px) {
+    width:90%
+  }
+
+  h2 {
+    margin: auto;
+    text-align: center;
+  }
+
+  #logoContainer {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    align-content:flex-start;
+    justify-content: space-around;
+    @media (max-width:825px) and (orientation:landscape) {
+      display: flex;
+      width:90%
+    }
+    @media (max-width:825px) and (orientation: portrait) {
+      width:90%;
+      display: block;
+    }
+  }
+
+  img {
+    max-width: 300px;
+    @media (max-width:825px) and (orientation: portrait) {
+      width:90%;
+      display: block;
+    }
+  }
+
+  #vidro {
+    width:40%;
+    @media (max-width:825px) and (orientation: portrait) {
+      width:90%;
+      margin:  20px auto;
+    }
+  }
+
+
+  #sweden {
+    width:30%;
+    @media (max-width:825px) and (orientation: portrait) {
+      width:90%;
+      margin: 20px auto;
+    }
+  }
+}
+
+
+
