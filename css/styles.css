@@ -281,8 +281,9 @@
       font-size: 0 !important; } }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  padding: 0; }
+  font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+  padding: 0;
+  color: #666; }
 
 /*---------- button -------*/
 #arrow-down {
@@ -317,18 +318,12 @@ form {
   grid-column: 1/2;
   grid-row: 1/2;
   margin-top: 20px;
-  font-size: 16px; }
-  form label {
-    white-space: nowrap; }
+  font-size: 18px; }
   form input[type=checkbox] {
     -ms-transform: scale(1.2);
-    /* IE */
     -moz-transform: scale(1.2);
-    /* FF */
     -webkit-transform: scale(1.2);
-    /* Safari and Chrome */
     -o-transform: scale(1.2);
-    /* Opera */
     transform: scale(1.2);
     padding: 10px;
     margin-right: 5px; }
@@ -338,6 +333,9 @@ form {
     padding: 5px;
     margin-right: 50px; }
 
+#check-form label {
+  white-space: nowrap; }
+
 #map {
   grid-column: 1/2;
   grid-row: 2/3;
@@ -345,10 +343,11 @@ form {
   margin-top: 20px;
   height: 90vh; }
   #map .leaflet-popup-content-wrapper {
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-    width: 250px;
-    text-align: center; }
+    font-size: 15px;
+    font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+    text-align: left; }
+  #map .leaflet-popup-content {
+    line-height: 1.5; }
 
 #test-form {
   grid-column: 2/3;
@@ -362,9 +361,37 @@ form {
   #test-form select[name='field_dropdown'] {
     padding: 5px;
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif; }
+    font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+    box-shadow: inset 0 1px 0 0 #ffffff;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+    background-color: #ffffff;
+    border: 1px solid grey;
+    display: inline-block;
+    cursor: pointer;
+    color: #666666;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #ffffff; }
   #test-form #submit-form {
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif; }
+    font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif; }
+
+button#submit-form {
+  box-shadow: inset 0 1px 0 0 #ffffff;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+  background-color: #ffffff;
+  border: 1px solid lightgrey;
+  display: inline-block;
+  cursor: pointer;
+  color: #666666;
+  font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px 24px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #ffffff; }
+
+button#submit-form:hover {
+  background-color: lightgrey; }
 
 /*# sourceMappingURL=styles.css.map */

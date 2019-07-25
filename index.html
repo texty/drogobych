@@ -48,7 +48,7 @@
         crossorigin=""></script>
 
 <!-- Links -->
-<link href="https://fonts.googleapis.com/css?family=Didact+Gothic|IBM+Plex+Sans|Montserrat|Noto+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,500,500i,600,600i,700|Open+Sans:400,600,600i,700,700i,800|PT+Mono|PT+Sans:400,400i,700,700i|Roboto+Mono:400,400i,500,500i,700,700i|Ubuntu:400,500,500i,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <link rel="stylesheet" href="css/styles.css">
 
@@ -73,11 +73,11 @@
 </div>
 
 <main>
-        <form>
-            <label class="checkbox-inline" style="background-color: #eeeeee;">
+        <form id="check-form">
+            <label class="checkbox-inline" style="border: 1px solid lightgrey;">
                 <input id="checkCutted" type="checkbox" value="" checked >Обрізані дерева
             </label>
-            <label class="checkbox-inline" style=" background-color: #EEEEEE;">
+            <label class="checkbox-inline" style="border: 1px solid lightgrey;">
                 <input id="checkRemoved" type="checkbox" value="">Видалені дерева
             </label>
         </form>
@@ -89,22 +89,22 @@
 <form id="test-form" name="myForm">
     <div>
         <label>Ім'я</label><br>
-        <input class="required" type="text" required name="field_name" placeholder=""/>
+        <input class="required" type="text" autocomplete="off" required name="field_name" placeholder=""/>
     </div>
 
     <div>
         <label>Адреса проживання</label><br>
-        <input class="required" type="text"  required name="field_address" placeholder=""/>
+        <input class="required" type="text"  autocomplete="off" required name="field_address" placeholder=""/>
     </div>
 
     <div>
         <label>Телефон</label><br>
-        <input class="required" type="text"  required name="field_phone" placeholder=""/>
+        <input class="required" type="text" autocomplete="off" required name="field_phone" placeholder=""/>
     </div>
 
     <div>
         <label>Адреса електронної пошти</label><br>
-        <input class="required" type="email" required name="field_mail" placeholder="" />
+        <input class="required" type="email" autocomplete="off" required name="field_mail" placeholder="" />
     </div>
 
     <div>
@@ -115,10 +115,13 @@
     <div>
         <label>Виберіть дерево виду дерева з випадаючого списку</label><br>
         <select name="field_dropdown">
-            <option value="volvo">Саджанець 1</option>
-            <option value="saab">Саджанець 2</option>
-            <option value="fiat">Саджанець 3</option>
-            <option value="audi">Саджанець 4</option>
+            <option value="">Береза</option>
+            <option value="">Верба</option>
+            <option value="">Вільха</option>
+            <option value="">Клен</option>
+            <option value="">Липа</option>
+            <option value="">Тополя</option>
+            <option value="">Ясень</option>
         </select>
     </div>
 

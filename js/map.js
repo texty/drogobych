@@ -2,7 +2,7 @@
  * Created by yevheniia on 15.06.19.
  */
 
-var icon = L.icon({
+var iconCutted = L.icon({
     iconUrl: 'img/tree.png',
     iconSize:     [30, 40], // size of the icon
     iconAnchor:   [22, 40], // point of the icon which will correspond to marker's location
@@ -10,7 +10,7 @@ var icon = L.icon({
 });
 
 var iconRemoved = L.icon({
-    iconUrl: 'img/icon.png',
+    iconUrl: 'img/deleted.png',
     iconSize:     [30, 40], // size of the icon
     iconAnchor:   [22, 40], // point of the icon which will correspond to marker's location
     popupAnchor:  [5, -40] // point from which the popup should open relative to the iconAnchor
@@ -47,8 +47,14 @@ d3.csv("data/cutted.csv", function(data) {
     var points = L.layerGroup();
 
     data.forEach(function(d){
-        L.marker([d.latitude, d.longitude],  {icon: icon} ).addTo(cuttedTrees)
-            .bindPopup("<img style='width:60%; margin:0 20%;' src='img/icon.png'/> <br>" + d.addressLocality + ", " + d.streetAddress);
+        L.marker([d.latitude, d.longitude],  { icon: iconCutted } ).addTo(cuttedTrees)
+            // .bindPopup("<img style='width:60%; margin:0 20%;' src='img/icon.png'/> <br>" + d.addressLocality + ", " + d.streetAddress);
+        .bindPopup("<span style='font-weight:600'>Адреса:</span> " + d.streetAddress + "<br>" +
+                "<span style='font-weight:600'>Номер акту:</span> " +d.actIdentifier + '<br>' +
+                "<span style='font-weight:600'>Замовник:</span> " + d.orderIdentifier  + '<br>' +
+                "<span style='font-weight:600'>Дата:</span> " + d.orderDate  + '<br>' +
+                "<span style='font-weight:600'>Тип дерева:</span> " + d.itemSpecies  + '<br>'
+        );
 
     });
 
@@ -71,7 +77,14 @@ d3.csv("data/removed.csv", function(data) {
 
     data.forEach(function(d){
         L.marker([d.latitude, d.longitude],  {icon: iconRemoved } ).addTo(removedTrees)
-            .bindPopup("<img style='width:60%; margin:0 20%;' src='img/icon.png'/> <br>" + d.addressLocality + ", " + d.streetAddress);
+            // .bindPopup("<img style='width:60%; margin:0 20%;' src='img/icon.png'/> <br>" + d.addressLocality + ", " + d.streetAddress);
+            .bindPopup("<span style='font-weight:600'>Адреса:</span> " + d.streetAddress + "<br>" +
+                "<span style='font-weight:600'>Номер акту:</span> " +d.actIdentifier + '<br>' +
+                "<span style='font-weight:600'>Замовник:</span> " + d.orderIdentifier  + '<br>' +
+                "<span style='font-weight:600'>Дата:</span> " + d.orderDate  + '<br>' +
+                "<span style='font-weight:600'>Тип дерева:</span> " + d.itemSpecies  + '<br>'
+            );
+
     });
 
 });

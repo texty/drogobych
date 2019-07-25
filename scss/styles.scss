@@ -5,12 +5,9 @@
 
 
 body {
-  //font-family: 'Noto Sans', sans-serif;
-  //font-family: 'IBM Plex Sans', sans-serif;
-  font-family: 'Montserrat', sans-serif;
-  //font-family: 'Didact Gothic', sans-serif;
-  //margin:0;
+  font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
   padding:0;
+  color:#666;
 }
 
 
@@ -20,7 +17,6 @@ body {
   background-color: rgba(225, 225, 225, 0.5);
   cursor:pointer;
   text-align: center;
-  //margin: 8% 0;
   @media(max-width:800px){
     display:none;
   }
@@ -58,17 +54,15 @@ form {
   grid-column:1/2;
   grid-row:1/2;
   margin-top: 20px;
-  font-size:16px;
+  font-size:18px;
 
-  label {
-    white-space: nowrap;
-  }
+
 
   input[type=checkbox] {
-    -ms-transform: scale(1.2); /* IE */
-    -moz-transform: scale(1.2); /* FF */
-    -webkit-transform: scale(1.2); /* Safari and Chrome */
-    -o-transform: scale(1.2); /* Opera */
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
     transform: scale(1.2);
     padding: 10px;
     margin-right:5px;
@@ -82,6 +76,12 @@ form {
   }
 }
 
+#check-form {
+  label {
+    white-space: nowrap;
+  }
+}
+
 #map {
   grid-column:1/2;
   grid-row:2/3;
@@ -91,10 +91,13 @@ form {
 
 
   .leaflet-popup-content-wrapper {
-    font-size:16px;
-    font-family: 'Montserrat', sans-serif;
-    width: 250px;
-    text-align: center;
+    font-size:15px;
+    font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+    text-align: left;
+  }
+
+  .leaflet-popup-content {
+    line-height: 1.5;
   }
 }
 
@@ -118,13 +121,49 @@ form {
   select[name='field_dropdown'] {
     padding:5px;
     font-size:16px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+    box-shadow:inset 0 1px 0 0 #ffffff;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+    background-color:#ffffff;
+    //border-radius:6px;
+    border:1px solid grey;
+    display:inline-block;
+    cursor:pointer;
+    color:#666666;
+    font-weight:bold;
+    text-decoration:none;
+    text-shadow:0 1px 0 #ffffff;
+
   }
 
   #submit-form {
     font-size:16px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+
   }
 }
+
+
+button#submit-form {
+  box-shadow:inset 0 1px 0 0 #ffffff;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+  background-color:#ffffff;
+  //border-radius:6px;
+  border:1px solid lightgrey;
+  display:inline-block;
+  cursor:pointer;
+  color:#666666;
+  font-family:medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size:15px;
+  font-weight:bold;
+  padding:8px 24px;
+  text-decoration:none;
+  text-shadow:0 1px 0 #ffffff;
+}
+
+button#submit-form:hover {
+  background-color:lightgrey;
+}
+
 
 
