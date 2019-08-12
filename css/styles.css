@@ -344,7 +344,7 @@ form {
   height: 90vh; }
   #map .leaflet-popup-content-wrapper {
     font-size: 15px;
-    font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: 'Open Sans', sans-serif;
     text-align: left; }
   #map .leaflet-popup-content {
     line-height: 1.5; }
@@ -441,5 +441,11 @@ button#submit-form:hover {
       #partners-logo #sweden {
         width: 90%;
         margin: 20px auto; } }
+
+table > tbody > tr > td {
+  vertical-align: top; }
+
+table > tbody > tr > td:nth-child(1) {
+  width: 40%; }
 
 /*# sourceMappingURL=styles.css.map */

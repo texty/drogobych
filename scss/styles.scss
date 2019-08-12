@@ -92,7 +92,9 @@ form {
 
   .leaflet-popup-content-wrapper {
     font-size:15px;
-    font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: 'Open Sans', sans-serif;
+
+    //font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
     text-align: left;
   }
 
@@ -227,6 +229,14 @@ button#submit-form:hover {
       margin: 20px auto;
     }
   }
+}
+
+table>tbody>tr>td {
+  vertical-align:top;
+}
+
+table>tbody>tr>td:nth-child(1) {
+ width:40%;
 }
 
 

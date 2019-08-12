@@ -49,14 +49,34 @@ d3.csv("data/cutted.csv", function(data) {
     data.forEach(function(d){
         L.marker([d.latitude, d.longitude],  { icon: iconCutted } ).addTo(cuttedTrees)
             // .bindPopup("<img style='width:60%; margin:0 20%;' src='img/icon.png'/> <br>" + d.addressLocality + ", " + d.streetAddress);
-        .bindPopup("<span style='font-weight:600'>Адреса:</span> " + d.streetAddress + "<br>" +
-                "<span style='font-weight:600'>Номер акту:</span> " +d.actIdentifier + '<br>' +
-                "<span style='font-weight:600'>Замовник:</span> " + d.orderIdentifier  + '<br>' +
-                "<span style='font-weight:600'>Дата:</span> " + d.orderDate  + '<br>' +
-                "<span style='font-weight:600'>Тип дерева:</span> " + d.itemSpecies  + '<br>'
+        .bindPopup(
+            "<table><tbody>" +
+            "<tr>" +
+            "<td style='color:grey'>Адреса:</td>"  +
+            "<td>" + d.streetAddress + "</td>"+
+            "</tr>" +
+            "<tr>" +
+            "<td style='color:grey'>Номер акту:</td>"  +
+            "<td>"  + d.actIdentifier + "</td>"+
+            "</tr>"+
+            "<tr>" +
+            "<td style='color:grey'>Замовник:</td>"  +
+            "<td>" + d.customerName  + "</td>"+
+            "</tr>"+
+            "<tr>" +
+            "<td style='color:grey'>Дата:</td>"  +
+            "<td>" + d.orderDate  + "</td>"+
+            "</tr>"+
+            "<tr>" +
+            "<td style='color:grey'>Тип дерева:</td>"  +
+            "<td>" + (d.itemSpecies).toLowerCase() + "</td>"+
+            "</tr>"+
+            "</tbody>" +
+            "</table>"
         );
 
     });
+
 
 });
 
@@ -78,13 +98,31 @@ d3.csv("data/removed.csv", function(data) {
     data.forEach(function(d){
         L.marker([d.latitude, d.longitude],  {icon: iconRemoved } ).addTo(removedTrees)
             // .bindPopup("<img style='width:60%; margin:0 20%;' src='img/icon.png'/> <br>" + d.addressLocality + ", " + d.streetAddress);
-            .bindPopup("<span style='font-weight:600'>Адреса:</span> " + d.streetAddress + "<br>" +
-                "<span style='font-weight:600'>Номер акту:</span> " +d.actIdentifier + '<br>' +
-                "<span style='font-weight:600'>Замовник:</span> " + d.orderIdentifier  + '<br>' +
-                "<span style='font-weight:600'>Дата:</span> " + d.orderDate  + '<br>' +
-                "<span style='font-weight:600'>Тип дерева:</span> " + d.itemSpecies  + '<br>'
+            .bindPopup(
+                "<table><tbody>" +
+                "<tr>" +
+                    "<td style='color:grey'>Адреса:</td>"  +
+                    "<td>" + d.streetAddress + "</td>"+
+                "</tr>" +
+                "<tr>" +
+                    "<td style='color:grey'>Номер акту:</td>"  +
+                    "<td>"  + d.actIdentifier + "</td>"+
+                "</tr>"+
+                "<tr>" +
+                    "<td style='color:grey'>Замовник:</td>"  +
+                    "<td>" + d.customerName  + "</td>"+
+                "</tr>"+
+                "<tr>" +
+                    "<td style='color:grey'>Дата:</td>"  +
+                    "<td>" + d.orderDate  + "</td>"+
+                "</tr>"+
+                "<tr>" +
+                    "<td style='color:grey'>Тип дерева:</td>"  +
+                    "<td>" + (d.itemSpecies).toLowerCase() + "</td>"+
+                "</tr>"+
+                "</tbody>" +
+                "</table>"
             );
-
     });
 
 });
