@@ -31,9 +31,8 @@ var iconOld = L.icon({
 });
 
 
-
 var mymap = L.map('map').setView([49.35, 23.51], 14);
-
+mymap.scrollWheelZoom.disable()
 
 var CartoDB_Positron = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',

@@ -14,9 +14,7 @@
   height:50px;
   width:200px;
   grid-column: 1/2;
-  @media #{$large}{
-    width:250px;
-  }
+
   @media #{$mobile} {
     width:120px;
   }
@@ -35,6 +33,9 @@
   display:flex;
   justify-content: flex-end;
   margin-right:20px;
+  position:fixed;
+  right:0;
+  top:10px;
 
   div#translate {
     display:flex;
@@ -61,7 +62,7 @@
 
   i {
     font-size:40px;
-    color: lighten($grey-color, 30%);
+    color: #3d322e;
     margin: 0 0 0 0.5em;
     max-height: 1em;
     transition: all 0.5s;
