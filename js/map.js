@@ -3,7 +3,7 @@
  */
 
 var iconCutted = L.icon({
-    iconUrl: 'img/tree.png',
+    iconUrl: 'img/cuted.png',
     iconSize:     [30, 40], // size of the icon
     iconAnchor:   [22, 40], // point of the icon which will correspond to marker's location
     popupAnchor:  [-3, -40] // point from which the popup should open relative to the iconAnchor
@@ -11,6 +11,20 @@ var iconCutted = L.icon({
 
 var iconRemoved = L.icon({
     iconUrl: 'img/deleted.png',
+    iconSize:     [30, 40], // size of the icon
+    iconAnchor:   [22, 40], // point of the icon which will correspond to marker's location
+    popupAnchor:  [5, -40] // point from which the popup should open relative to the iconAnchor
+});
+
+var iconNew = L.icon({
+    iconUrl: 'img/new.png',
+    iconSize:     [30, 40], // size of the icon
+    iconAnchor:   [22, 40], // point of the icon which will correspond to marker's location
+    popupAnchor:  [5, -40] // point from which the popup should open relative to the iconAnchor
+});
+
+var iconOld = L.icon({
+    iconUrl: 'img/old.png',
     iconSize:     [30, 40], // size of the icon
     iconAnchor:   [22, 40], // point of the icon which will correspond to marker's location
     popupAnchor:  [5, -40] // point from which the popup should open relative to the iconAnchor
@@ -31,6 +45,9 @@ var CartoDB_Positron = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fast
 
 var cuttedTrees = new L.LayerGroup();
 var removedTrees = new L.LayerGroup();
+var newTrees = new L.LayerGroup();
+var oldTrees = new L.LayerGroup();
+
 
 
 d3.csv("data/cutted.csv", function(data) {
@@ -83,7 +100,6 @@ d3.csv("data/cutted.csv", function(data) {
 
 
 d3.csv("data/removed.csv", function(data) {
-
     data.forEach(function(d){
         d.longitude = +d.longitude;
         d.latitude = +d.latitude;
@@ -127,9 +143,101 @@ d3.csv("data/removed.csv", function(data) {
 
 });
 
-cuttedTrees.addTo(mymap);
-// removedTrees.addTo(mymap)
+d3.csv("data/removed.csv", function(data) {
+    data.forEach(function(d){
+        d.longitude = +d.longitude;
+        d.latitude = +d.latitude;
+    });
 
+    var nestedData = d3.nest()
+        .key(function(d) { return d.actIdentifier; })
+        .entries(data);
+
+    var points = L.layerGroup();
+
+    data.forEach(function(d){
+        L.marker([d.latitude, d.longitude],  {icon: iconNew } ).addTo(newTrees)
+        // .bindPopup("<img style='width:60%; margin:0 20%;' src='img/icon.png'/> <br>" + d.addressLocality + ", " + d.streetAddress);
+            .bindPopup(
+                "<table><tbody>" +
+                "<tr>" +
+                "<td style='color:grey'>Адреса:</td>"  +
+                "<td>" + d.streetAddress + "</td>"+
+                "</tr>" +
+                "<tr>" +
+                "<td style='color:grey'>Номер акту:</td>"  +
+                "<td>"  + d.actIdentifier + "</td>"+
+                "</tr>"+
+                "<tr>" +
+                "<td style='color:grey'>Замовник:</td>"  +
+                "<td>" + d.customerName  + "</td>"+
+                "</tr>"+
+                "<tr>" +
+                "<td style='color:grey'>Дата:</td>"  +
+                "<td>" + d.orderDate  + "</td>"+
+                "</tr>"+
+                "<tr>" +
+                "<td style='color:grey'>Тип дерева:</td>"  +
+                "<td>" + (d.itemSpecies).toLowerCase() + "</td>"+
+                "</tr>"+
+                "</tbody>" +
+                "</table>"
+            );
+    });
+
+});
+
+
+d3.csv("data/removed.csv", function(data) {
+    data.forEach(function(d){
+        d.longitude = +d.longitude;
+        d.latitude = +d.latitude;
+    });
+
+    var nestedData = d3.nest()
+        .key(function(d) { return d.actIdentifier; })
+        .entries(data);
+
+    var points = L.layerGroup();
+
+    data.forEach(function(d){
+        L.marker([d.latitude, d.longitude],  {icon: iconOld } ).addTo(oldTrees)
+        // .bindPopup("<img style='width:60%; margin:0 20%;' src='img/icon.png'/> <br>" + d.addressLocality + ", " + d.streetAddress);
+            .bindPopup(
+                "<table><tbody>" +
+                "<tr>" +
+                "<td style='color:grey'>Адреса:</td>"  +
+                "<td>" + d.streetAddress + "</td>"+
+                "</tr>" +
+                "<tr>" +
+                "<td style='color:grey'>Номер акту:</td>"  +
+                "<td>"  + d.actIdentifier + "</td>"+
+                "</tr>"+
+                "<tr>" +
+                "<td style='color:grey'>Замовник:</td>"  +
+                "<td>" + d.customerName  + "</td>"+
+                "</tr>"+
+                "<tr>" +
+                "<td style='color:grey'>Дата:</td>"  +
+                "<td>" + d.orderDate  + "</td>"+
+                "</tr>"+
+                "<tr>" +
+                "<td style='color:grey'>Тип дерева:</td>"  +
+                "<td>" + (d.itemSpecies).toLowerCase() + "</td>"+
+                "</tr>"+
+                "</tbody>" +
+                "</table>"
+            );
+    });
+
+});
+
+
+
+//по дефолту показуємо обрізані
+cuttedTrees.addTo(mymap);
+
+//шар з обрізаними деревами
 const checkCutted = document.getElementById('checkCutted');
 checkCutted.addEventListener('change', function(e) {
     if (e.target.checked) {
@@ -139,11 +247,32 @@ checkCutted.addEventListener('change', function(e) {
 }
 });
 
+//шар з видаленими деревами
 const checkRemoved = document.getElementById('checkRemoved');
 checkRemoved.addEventListener('change', function(e) {
     if (e.target.checked) {
         removedTrees.addTo(mymap);
     } else {
         mymap.removeLayer(removedTrees);
+    }
+});
+
+//шар з новими деревами
+const checkNew = document.getElementById('checkNew');
+checkNew.addEventListener('change', function(e) {
+    if (e.target.checked) {
+        newTrees.addTo(mymap);
+    } else {
+        mymap.removeLayer(newTrees);
+    }
+});
+
+//шар зі старими деревами
+const checkOld = document.getElementById('checkOld');
+checkOld.addEventListener('change', function(e) {
+    if (e.target.checked) {
+        oldTrees.addTo(mymap);
+    } else {
+        mymap.removeLayer(oldTrees);
     }
 });

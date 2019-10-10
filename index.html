@@ -70,17 +70,29 @@
 
 
 <div id="header">
-    <!--<img id="cover-picture" src="img/cover.png"/>-->
+   <img id="cover-picture" src="img/cover.jpg"/>
+</div>
+
+<div class="text">
+    <h3>Зелений Дрогобич — це інструмент, що допомагає Міській раді Дрогобича інформувати громадськість про рішення прийняті у сфері озеленення, а громадськості — контролювати ці рішення.
+    </h3>
 </div>
 
 <main>
         <form id="check-form">
+            <label class="checkbox-inline" style="border: 1px solid lightgrey;">
+                <input id="checkNew" type="checkbox" value="">Саджанці
+            </label>
             <label class="checkbox-inline" style="border: 1px solid lightgrey;">
                 <input id="checkCutted" type="checkbox" value="" checked >Обрізані дерева
             </label>
             <label class="checkbox-inline" style="border: 1px solid lightgrey;">
                 <input id="checkRemoved" type="checkbox" value="">Видалені дерева
             </label>
+            <label class="checkbox-inline" style="border: 1px solid lightgrey;">
+                <input id="checkOld" type="checkbox" value="">Старі дерева
+            </label>
+
         </form>
 
         <div id="map"></div>
@@ -129,6 +141,10 @@
         <label>Коментар</label><br>
         <textarea name="field_comment"></textarea>
     </div>
+
+    <label class="checkbox">
+        <input id="agree" type="checkbox" value="" onclick="personalData()">Даю згоду на обробку персональних даних
+    </label>
 
     <div>
         <button type="submit" id="submit-form">Надіслати</button>
@@ -209,7 +225,7 @@
 <!--&lt;!&ndash;<script src="http://d3js.org/d3.v3.min.js"></script>&ndash;&gt;-->
 <!--<script src="lib/scrollama.min.js"></script>-->
 <!--<script src="lib/swoopy-drag.js"></script>-->
-<!--<script src="lib/share-behavior.js"></script>-->
+<script src="lib/share-behavior.js"></script>
 <script src="js/script.js"></script>
 <script src="js/map.js"></script>
 
