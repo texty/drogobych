@@ -14,6 +14,10 @@ body {
 #header {
   margin:0;
   padding:0;
+
+  img {
+    max-width:100%;
+  }
 }
 
 .text {
@@ -30,7 +34,7 @@ body {
 /*---------- button -------*/
 
 #arrow-down {
-  background-color: rgba(225, 225, 225, 0.5);
+  //background-color: rgba(225, 225, 225, 0.5);
   cursor:pointer;
   text-align: center;
   @media(max-width:800px){
@@ -66,13 +70,37 @@ main {
   }
 }
 
-form {
+
+
+//карта
+
+#map {
+  grid-column:1/2;
+  grid-row:2/3;
+  border: 1px solid lightgrey;
+  margin-top: 20px;
+  height: 90vh;
+
+
+  .leaflet-popup-content-wrapper {
+    font-size:15px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+  }
+
+  .leaflet-popup-content {
+    line-height: 1.5;
+  }
+}
+
+
+//чекбокси з типами дерев
+
+form#check-form {
   grid-column:1/2;
   grid-row:1/2;
   margin-top: 20px;
   font-size:18px;
-
-
 
   input[type=checkbox] {
     -ms-transform: scale(1.2);
@@ -90,36 +118,14 @@ form {
     padding:5px;
     margin-right:50px;
   }
-}
 
-#check-form {
   label {
     white-space: nowrap;
   }
 }
 
-#map {
-  grid-column:1/2;
-  grid-row:2/3;
-  border: 1px solid lightgrey;
-  margin-top: 20px;
-  height: 90vh;
-
-
-  .leaflet-popup-content-wrapper {
-    font-size:15px;
-    font-family: 'Open Sans', sans-serif;
-
-    //font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
-    text-align: left;
-  }
-
-  .leaflet-popup-content {
-    line-height: 1.5;
-  }
-}
-
-#test-form {
+//зворотній звʼязок
+form#test-form {
   grid-column:2/3;
   grid-row:2/3;
   margin-left:10px;
@@ -132,9 +138,6 @@ form {
     margin-top:5px;
     padding:5px;
     background-color: transparent;
-    //border:none;
-    //background-color: #f2f2f2;
-
   }
 
   select[name='field_dropdown'] {
@@ -144,7 +147,6 @@ form {
     box-shadow:inset 0 1px 0 0 #ffffff;
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
     background-color:#ffffff;
-    //border-radius:6px;
     border:1px solid grey;
     display:inline-block;
     cursor:pointer;
@@ -162,11 +164,10 @@ form {
 }
 
 
+//кнопка відправки даних
 button#submit-form {
   box-shadow:inset 0 1px 0 0 #ffffff;
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
   background-color:#ffffff;
-  //border-radius:6px;
   border:1px solid lightgrey;
   display:inline-block;
   cursor:pointer;
@@ -186,10 +187,10 @@ button#submit-form:hover {
 
 
 
+//футер, лого партнерів
+
 #partners-logo {
   text-align: center;
-  //color: $dark;
-  //background-color: white;
   display: flex;
   flex-direction: column;
   width:50%;
@@ -248,6 +249,8 @@ button#submit-form:hover {
   }
 }
 
+
+//icons popups
 table>tbody>tr>td {
   vertical-align:top;
 }

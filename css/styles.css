@@ -289,6 +289,8 @@ body {
 #header {
   margin: 0;
   padding: 0; }
+  #header img {
+    max-width: 100%; }
 
 .text {
   width: 50%;
@@ -299,7 +301,6 @@ body {
 
 /*---------- button -------*/
 #arrow-down {
-  background-color: rgba(225, 225, 225, 0.5);
   cursor: pointer;
   text-align: center; }
   @media (max-width: 800px) {
@@ -326,28 +327,6 @@ main {
     main {
       display: block; } }
 
-form {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  margin-top: 20px;
-  font-size: 18px; }
-  form input[type=checkbox] {
-    -ms-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
-    padding: 10px;
-    margin-right: 5px; }
-  form .checkbox-inline {
-    line-height: 1.6;
-    border-radius: 5px;
-    padding: 5px;
-    margin-right: 50px; }
-
-#check-form label {
-  white-space: nowrap; }
-
 #map {
   grid-column: 1/2;
   grid-row: 2/3;
@@ -361,17 +340,38 @@ form {
   #map .leaflet-popup-content {
     line-height: 1.5; }
 
-#test-form {
+form#check-form {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-top: 20px;
+  font-size: 18px; }
+  form#check-form input[type=checkbox] {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    padding: 10px;
+    margin-right: 5px; }
+  form#check-form .checkbox-inline {
+    line-height: 1.6;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 50px; }
+  form#check-form label {
+    white-space: nowrap; }
+
+form#test-form {
   grid-column: 2/3;
   grid-row: 2/3;
   margin-left: 10px; }
-  #test-form div {
+  form#test-form div {
     margin-bottom: 20px; }
-  #test-form input, #test-form textarea, #test-form select[name='field_dropdown'], #test-form #submit-form {
+  form#test-form input, form#test-form textarea, form#test-form select[name='field_dropdown'], form#test-form #submit-form {
     margin-top: 5px;
     padding: 5px;
     background-color: transparent; }
-  #test-form select[name='field_dropdown'] {
+  form#test-form select[name='field_dropdown'] {
     padding: 5px;
     font-size: 16px;
     font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
@@ -385,13 +385,12 @@ form {
     font-weight: bold;
     text-decoration: none;
     text-shadow: 0 1px 0 #ffffff; }
-  #test-form #submit-form {
+  form#test-form #submit-form {
     font-size: 16px;
     font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif; }
 
 button#submit-form {
   box-shadow: inset 0 1px 0 0 #ffffff;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
   background-color: #ffffff;
   border: 1px solid lightgrey;
   display: inline-block;

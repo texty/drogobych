@@ -57,11 +57,11 @@ d3.csv("data/cutted.csv", function(data) {
         d.latitude = +d.latitude;
     });
 
-    var nestedData = d3.nest()
-        .key(function(d) { return d.actIdentifier; })
-        .entries(data);
-    
-    var points = L.layerGroup();
+    // var nestedData = d3.nest()
+    //     .key(function(d) { return d.actIdentifier; })
+    //     .entries(data);
+    //
+    // var points = L.layerGroup();
 
     data.forEach(function(d){
         L.marker([d.latitude, d.longitude],  { icon: iconCutted } ).addTo(cuttedTrees)
@@ -194,11 +194,11 @@ d3.csv("data/removed.csv", function(data) {
         d.latitude = +d.latitude;
     });
 
-    var nestedData = d3.nest()
-        .key(function(d) { return d.actIdentifier; })
-        .entries(data);
-
-    var points = L.layerGroup();
+    // var nestedData = d3.nest()
+    //     .key(function(d) { return d.actIdentifier; })
+    //     .entries(data);
+    //
+    // var points = L.layerGroup();
 
     data.forEach(function(d){
         L.marker([d.latitude, d.longitude],  {icon: iconOld } ).addTo(oldTrees)

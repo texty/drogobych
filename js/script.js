@@ -5,8 +5,7 @@ var $form = $('form#test-form'),
     url = 'https://script.google.com/macros/s/AKfycbzyBXD8-1tK1igw9cN31S1ak9Ktwip00HOg0euP1SjKnwHpkyyz/exec';
 
 
-$('#submit-form').on('click', function(e) {
-    console.log(agree);
+$('#submit-form').on('click', function(e) {    
         if(agree === true){
 
             var empty = false;
