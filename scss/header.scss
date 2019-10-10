@@ -16,7 +16,7 @@
   grid-column: 1/2;
 
   @media #{$mobile} {
-    width:120px;
+    width:150px;
   }
 
   a {
@@ -61,14 +61,11 @@
 
 
   i {
-    font-size:40px;
+    font-size:30px;
     color: #3d322e;
     margin: 0 0 0 0.5em;
     max-height: 1em;
     transition: all 0.5s;
-    @media #{$mobile} {
-      font-size:20px;
-    }
 
     &:hover {
       color: $hover-color;

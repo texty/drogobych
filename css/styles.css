@@ -77,7 +77,7 @@
   grid-column: 1/2; }
   @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .logo {
-      width: 120px; } }
+      width: 150px; } }
   .logo a {
     height: 100%;
     display: flex; }
@@ -108,14 +108,11 @@
       #soc a span {
         font-size: 14px; } }
   #soc i {
-    font-size: 40px;
+    font-size: 30px;
     color: #3d322e;
     margin: 0 0 0 0.5em;
     max-height: 1em;
     transition: all 0.5s; }
-    @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-      #soc i {
-        font-size: 20px; } }
     #soc i:hover {
       color: pink; }
 
