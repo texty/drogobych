@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="parks_edited" id="parks_edited">
+	<SimpleField name="timestamp" type="string"></SimpleField>
+	<SimpleField name="begin" type="string"></SimpleField>
+	<SimpleField name="end" type="string"></SimpleField>
+	<SimpleField name="altitudeMode" type="string"></SimpleField>
+	<SimpleField name="tessellate" type="string"></SimpleField>
+	<SimpleField name="extrude" type="int"></SimpleField>
+	<SimpleField name="visibility" type="string"></SimpleField>
+	<SimpleField name="drawOrder" type="string"></SimpleField>
+	<SimpleField name="icon" type="string"></SimpleField>
+	<SimpleField name="type" type="string"></SimpleField>
+	<SimpleField name="area" type="string"></SimpleField>
+</Schema>
+<Folder><name>parks_edited</name>
+  <Placemark>
+	<name>Парк ім. Богдана Хмельницького</name>
+	<description>вул. Трускавецька</description>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parks_edited">
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="icon">hmeln.jpg</SimpleData>
+		<SimpleData name="type">Парк-пам'ятка садово-паркового мистецтва місцевого значення
+</SimpleData>
+		<SimpleData name="area">150 га</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>23.5048692,49.3185518,0 23.50547,49.3186777,0 23.5123365,49.320482,0 23.5122077,49.3206918,0 23.5118429,49.3208736,0 23.5112207,49.3209995,0 23.5106413,49.3210135,0 23.5098045,49.3210974,0 23.5086887,49.3218806,0 23.5098474,49.323475,0 23.5116069,49.322566,0 23.5130016,49.3228736,0 23.5149972,49.3231534,0 23.5158984,49.3229715,0 23.5165851,49.3216848,0 23.5170142,49.3218247,0 23.5164778,49.3229576,0 23.5114996,49.33504,0 23.5105126,49.3351798,0 23.5099547,49.3349281,0 23.5080664,49.3353756,0 23.5072081,49.3349281,0 23.5070364,49.3343688,0 23.5073797,49.3339773,0 23.5072724,49.3335438,0 23.5068004,49.3332502,0 23.5058348,49.3329565,0 23.5047297,49.3328062,0 23.5031633,49.3329146,0 23.5020797,49.3331384,0 23.5008566,49.330901,0 23.4967367,49.3272091,0 23.4998266,49.3210554,0 23.5048692,49.3185518,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Парк культури та відпочинку</name>
+	<description>Стара назва Парк ім. Василєва, вул. Трускавецька</description>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parks_edited">
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="icon">vasil.jpg</SimpleData>
+		<SimpleData name="type">Парк-пам'ятка садово-паркового мистецтва місцевого значення
+</SimpleData>
+		<SimpleData name="area">1.94 Га</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>23.5072204,49.3486978,0 23.5076173,49.3481387,0 23.5076871,49.3479674,0 23.5082718,49.3480164,0 23.5087868,49.3481527,0 23.5091355,49.3483029,0 23.5093178,49.3484253,0 23.5098275,49.3486314,0 23.5103585,49.3488062,0 23.5099347,49.3492745,0 23.5096129,49.3495226,0 23.5093661,49.3497812,0 23.5084059,49.3495505,0 23.5084005,49.3494003,0 23.5083415,49.3492535,0 23.5082128,49.3491417,0 23.5080572,49.3490228,0 23.5079016,49.348932,0 23.507671,49.3488446,0 23.5072204,49.3486978,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Парк ХІХ ст</name>
+	<description>Парк навколо костелу Святого Варфоломія, Площа Замкова Гора</description>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parks_edited">
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="icon">XIX.jpg</SimpleData>
+		<SimpleData name="type">Парк-пам'ятка садово-паркового мистецтва місцевого значення
+</SimpleData>
+		<SimpleData name="area">2.35 Га</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>23.5035131,49.3518031,0 23.5037169,49.3517647,0 23.5039369,49.3517682,0 23.5042695,49.3517472,0 23.5049776,49.3519359,0 23.5045538,49.3525509,0 23.5035077,49.3527955,0 23.5035131,49.3518031,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Парк ім. Степана Бандери</name>
+	<description>вул. Тараса Шевченка</description>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parks_edited">
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="icon">bandery.jpg</SimpleData>
+		<SimpleData name="type">Парк-пам'ятка садово-паркового мистецтва місцевого значення
+</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>23.5062163,49.3533923,0 23.5044943,49.353878,0 23.5041832,49.3533085,0 23.5047411,49.3531897,0 23.5046445,49.3529381,0 23.504843,49.3529136,0 23.5048698,49.3526934,0 23.5062324,49.3529695,0 23.5062163,49.3533923,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Парк Новонароджених</name>
+	<description>вул. Володимира Великого</description>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parks_edited">
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="icon">no_photo.png</SimpleData>
+		<SimpleData name="type">Парк-пам'ятка садово-паркового мистецтва місцевого значення
+</SimpleData>
+		<SimpleData name="area">33 Га</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>23.5138946,49.3629932,0 23.5137981,49.3619416,0 23.5146993,49.3618019,0 23.514195,49.3594226,0 23.5145276,49.3593911,0 23.514077,49.3575813,0 23.5210078,49.3562954,0 23.5212653,49.3570921,0 23.5254496,49.3574555,0 23.5258358,49.3604463,0 23.5213888,49.3609809,0 23.5159975,49.3625775,0 23.5159653,49.3627382,0 23.5142254,49.3629222,0 23.5138946,49.3629932,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Сквер Студентський</name>
+	<description>вул. Лесі Українки, 23</description>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parks_edited">
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="icon">stud.jpg</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>23.5036129,49.3558743,0 23.502953,49.3548575,0 23.5033178,49.3547491,0 23.5033983,49.3548644,0 23.5036987,49.3547771,0 23.5042941,49.3556786,0 23.5036129,49.3558743,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Сквер Івана Франка</name>
+	<description>вул. Івана Франка, 22</description>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parks_edited">
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="icon">franka.jpg</SimpleData>
+		<SimpleData name="type">Парк-пам'ятка садово-паркового мистецтва місцевого значення
+</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>23.501285,49.3547726,0 23.5009739,49.354231,0 23.5019395,49.3540126,0 23.5022157,49.354542,0 23.501285,49.3547726,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Парк ім. Героїв Небесної Сотні</name>
+	<description>вул. Пилипа Орлика</description>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parks_edited">
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="icon">sotnya.jpg</SimpleData>
+		<SimpleData name="type">Парк-пам'ятка садово-паркового мистецтва місцевого значення
+</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>23.5109312,49.3543656,0 23.5105637,49.3540546,0 23.5110733,49.3538659,0 23.5114354,49.3541804,0 23.5109312,49.3543656,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Дендропарк</name>
+	<description>вул. Тараса Шевченка</description>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#parks_edited">
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="icon">no_photo.png</SimpleData>
+		<SimpleData name="type">Парк-пам'ятка садово-паркового мистецтва місцевого значення
+</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>23.5000709,49.3531788,0 23.4998563,49.3527245,0 23.499969,49.3525568,0 23.4998563,49.3523524,0 23.5002264,49.3522807,0 23.5006663,49.3521409,0 23.501074,49.3530006,0 23.5007441,49.3530637,0 23.5006127,49.3528228,0 23.500331,49.3528984,0 23.5004303,49.3531316,0 23.500087,49.3532207,0 23.5000709,49.3531788,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>

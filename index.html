@@ -47,6 +47,9 @@
         integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
         crossorigin=""></script>
 
+<script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
+
+
 <!-- Links -->
 <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,500,500i,600,600i,700|Open+Sans:400,600,600i,700,700i,800|PT+Mono|PT+Sans:400,400i,700,700i|Roboto+Mono:400,400i,500,500i,700,700i|Ubuntu:400,500,500i,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
@@ -82,9 +85,9 @@
 
 <main>
         <form id="check-form">
-            <label class="checkbox-inline" style="border: 1px solid lightgrey;">
-                <input id="checkNew" type="checkbox" value="">Саджанці
-            </label>
+            <!--<label class="checkbox-inline" style="border: 1px solid lightgrey;">-->
+                <!--<input id="checkNew" type="checkbox" value="">Саджанці-->
+            <!--</label>-->
             <label class="checkbox-inline" style="border: 1px solid lightgrey;">
                 <input id="checkCutted" type="checkbox" value="" checked >Обрізані дерева
             </label>
@@ -93,6 +96,9 @@
             </label>
             <label class="checkbox-inline" style="border: 1px solid lightgrey;">
                 <input id="checkOld" type="checkbox" value="">Старі дерева
+            </label>
+            <label class="checkbox-inline" style="border: 1px solid lightgrey;">
+                <input id="parks" type="checkbox" value="">Парки
             </label>
 
         </form>

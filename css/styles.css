@@ -345,11 +345,15 @@ main {
   #map .leaflet-popup-content {
     line-height: 1.5; }
 
+path {
+  fill: green;
+  stroke: green; }
+
 form#check-form {
   grid-column: 1/2;
   grid-row: 1/2;
   margin-top: 20px;
-  font-size: 18px; }
+  font-size: 15px; }
   form#check-form input[type=checkbox] {
     -ms-transform: scale(1.2);
     -moz-transform: scale(1.2);
@@ -464,6 +468,10 @@ table > tbody > tr > td {
   vertical-align: top; }
 
 table > tbody > tr > td:nth-child(1) {
-  width: 40%; }
+  width: 30%; }
+
+.leaflet-popup-content {
+  width: 350px;
+  height: auto; }
 
 /*# sourceMappingURL=styles.css.map */

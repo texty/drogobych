@@ -105,13 +105,18 @@ main {
 }
 
 
+path {
+  fill: green;
+  stroke: green;
+}
+
 //чекбокси з типами дерев
 
 form#check-form {
   grid-column:1/2;
   grid-row:1/2;
   margin-top: 20px;
-  font-size:18px;
+  font-size:15px;
 
   input[type=checkbox] {
     -ms-transform: scale(1.2);
@@ -267,7 +272,12 @@ table>tbody>tr>td {
 }
 
 table>tbody>tr>td:nth-child(1) {
- width:40%;
+ width:30%;
+}
+
+.leaflet-popup-content {
+  width: 350px;
+  height: auto;
 }
 
 

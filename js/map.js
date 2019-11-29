@@ -32,7 +32,7 @@ var iconOld = L.icon({
 
 
 var mymap = L.map('map').setView([49.35, 23.51], 14);
-mymap.scrollWheelZoom.disable()
+mymap.scrollWheelZoom.disable();
 
 var CartoDB_Positron = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
@@ -46,7 +46,40 @@ var cuttedTrees = new L.LayerGroup();
 var removedTrees = new L.LayerGroup();
 var newTrees = new L.LayerGroup();
 var oldTrees = new L.LayerGroup();
+var parks = new L.LayerGroup();
 
+var customLayer = L.geoJson(null, {
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup(
+            '<img style="width: 100%; height: auto;" src="'+ 'img/parks/'+ feature.properties.icon + '"/>' +
+            "<table><tbody>" +
+            "<tr>" +
+            "<td style='color:grey'>Тип:</td>"  +
+            "<td>" + feature.properties.type + "</td>"+
+            "</tr>" +
+            "<tr>" +
+            "<td style='color:grey'>Назва:</td>"  +
+            "<td>" + feature.properties.name + "</td>"+
+            "</tr>" +
+            "<tr>" +
+            "<td style='color:grey'>Адреса:</td>"  +
+            "<td>"  + feature.properties.description + "</td>"+
+            "</tr>"+
+            "<tr>" +
+            "<td style='color:grey'>Площа:</td>"  +
+            "<td>"  + feature.properties.area + "</td>"+
+            "</tr>"+
+            "</tbody>" +
+            "</table>"
+            // '<p>' + feature.properties.name+ '</p><p>' + feature.properties.description+  '</p>'
+        )
+
+
+
+}
+});
+
+omnivore.kml('data/parks_edited.kml', null, customLayer).addTo(parks);
 
 
 d3.csv("data/cutted.csv", function(data) {
@@ -187,7 +220,7 @@ d3.csv("data/removed.csv", function(data) {
 });
 
 
-d3.csv("data/removed.csv", function(data) {
+d3.csv("data/old.csv", function(data) {
     data.forEach(function(d){
         d.longitude = +d.longitude;
         d.latitude = +d.latitude;
@@ -200,29 +233,30 @@ d3.csv("data/removed.csv", function(data) {
     // var points = L.layerGroup();
 
     data.forEach(function(d){
+        console.log(d);
         L.marker([d.latitude, d.longitude],  {icon: iconOld } ).addTo(oldTrees)
-        // .bindPopup("<img style='width:60%; margin:0 20%;' src='img/icon.png'/> <br>" + d.addressLocality + ", " + d.streetAddress);
             .bindPopup(
+                '<img style="width: 100%; height: auto;" src="'+ d.url + '"/>' +
                 "<table><tbody>" +
                 "<tr>" +
-                "<td style='color:grey'>Адреса:</td>"  +
-                "<td>" + d.streetAddress + "</td>"+
+                "<td style='color:grey'>Тип:</td>"  +
+                "<td>" + d.type + "</td>"+
                 "</tr>" +
                 "<tr>" +
-                "<td style='color:grey'>Номер акту:</td>"  +
-                "<td>"  + d.actIdentifier + "</td>"+
+                "<td style='color:grey'>Назва:</td>"  +
+                "<td>"  + d.name + " ("+ d.amount +") </td>"+
                 "</tr>"+
                 "<tr>" +
-                "<td style='color:grey'>Замовник:</td>"  +
-                "<td>" + d.customerName  + "</td>"+
+                "<td style='color:grey'>Адреса:</td>"  +
+                "<td>"  + d.address + "</td>"+
                 "</tr>"+
                 "<tr>" +
-                "<td style='color:grey'>Дата:</td>"  +
-                "<td>" + d.orderDate  + "</td>"+
+                "<td style='color:grey'>Статус надано:</td>"  +
+                "<td>" + d.status_from  + "року </td>"+
                 "</tr>"+
                 "<tr>" +
-                "<td style='color:grey'>Тип дерева:</td>"  +
-                "<td>" + (d.itemSpecies).toLowerCase() + "</td>"+
+                "<td style='color:grey'>Площа:</td>"  +
+                "<td>" + d.area  + "</td>"+
                 "</tr>"+
                 "</tbody>" +
                 "</table>"
@@ -235,6 +269,7 @@ d3.csv("data/removed.csv", function(data) {
 
 //по дефолту показуємо обрізані
 cuttedTrees.addTo(mymap);
+
 
 //шар з обрізаними деревами
 const checkCutted = document.getElementById('checkCutted');
@@ -257,14 +292,14 @@ checkRemoved.addEventListener('change', function(e) {
 });
 
 //шар з новими деревами
-const checkNew = document.getElementById('checkNew');
-checkNew.addEventListener('change', function(e) {
-    if (e.target.checked) {
-        newTrees.addTo(mymap);
-    } else {
-        mymap.removeLayer(newTrees);
-    }
-});
+// const checkNew = document.getElementById('checkNew');
+// checkNew.addEventListener('change', function(e) {
+//     if (e.target.checked) {
+//         newTrees.addTo(mymap);
+//     } else {
+//         mymap.removeLayer(newTrees);
+//     }
+// });
 
 //шар зі старими деревами
 const checkOld = document.getElementById('checkOld');
@@ -275,3 +310,13 @@ checkOld.addEventListener('change', function(e) {
         mymap.removeLayer(oldTrees);
     }
 });
+
+const checkParks = document.getElementById('parks');
+checkParks.addEventListener('change', function(e) {
+    if (e.target.checked) {
+        parks.addTo(mymap);
+    } else {
+        mymap.removeLayer(parks);
+    }
+});
+
