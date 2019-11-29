@@ -269,6 +269,7 @@ d3.csv("data/old.csv", function(data) {
 
 //по дефолту показуємо обрізані
 cuttedTrees.addTo(mymap);
+parks.addTo(mymap);
 
 
 //шар з обрізаними деревами
