@@ -63,6 +63,7 @@
 		<SimpleData name="icon">bandery.jpg</SimpleData>
 		<SimpleData name="type">Парк-пам'ятка садово-паркового мистецтва місцевого значення
 </SimpleData>
+		<SimpleData name="area">невідомо</SimpleData>
 	</SchemaData></ExtendedData>
       <Polygon><outerBoundaryIs><LinearRing><coordinates>23.5062163,49.3533923,0 23.5044943,49.353878,0 23.5041832,49.3533085,0 23.5047411,49.3531897,0 23.5046445,49.3529381,0 23.504843,49.3529136,0 23.5048698,49.3526934,0 23.5062324,49.3529695,0 23.5062163,49.3533923,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
   </Placemark>
@@ -86,6 +87,9 @@
 	<ExtendedData><SchemaData schemaUrl="#parks_edited">
 		<SimpleData name="extrude">0</SimpleData>
 		<SimpleData name="icon">stud.jpg</SimpleData>
+		<SimpleData name="type">Парк-пам'ятка садово-паркового мистецтва місцевого значення
+</SimpleData>
+		<SimpleData name="area">невідомо</SimpleData>
 	</SchemaData></ExtendedData>
       <Polygon><outerBoundaryIs><LinearRing><coordinates>23.5036129,49.3558743,0 23.502953,49.3548575,0 23.5033178,49.3547491,0 23.5033983,49.3548644,0 23.5036987,49.3547771,0 23.5042941,49.3556786,0 23.5036129,49.3558743,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
   </Placemark>
@@ -98,6 +102,7 @@
 		<SimpleData name="icon">franka.jpg</SimpleData>
 		<SimpleData name="type">Парк-пам'ятка садово-паркового мистецтва місцевого значення
 </SimpleData>
+		<SimpleData name="area">невідомо</SimpleData>
 	</SchemaData></ExtendedData>
       <Polygon><outerBoundaryIs><LinearRing><coordinates>23.501285,49.3547726,0 23.5009739,49.354231,0 23.5019395,49.3540126,0 23.5022157,49.354542,0 23.501285,49.3547726,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
   </Placemark>
@@ -110,6 +115,7 @@
 		<SimpleData name="icon">sotnya.jpg</SimpleData>
 		<SimpleData name="type">Парк-пам'ятка садово-паркового мистецтва місцевого значення
 </SimpleData>
+		<SimpleData name="area">невідомо</SimpleData>
 	</SchemaData></ExtendedData>
       <Polygon><outerBoundaryIs><LinearRing><coordinates>23.5109312,49.3543656,0 23.5105637,49.3540546,0 23.5110733,49.3538659,0 23.5114354,49.3541804,0 23.5109312,49.3543656,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
   </Placemark>
@@ -122,6 +128,7 @@
 		<SimpleData name="icon">no_photo.png</SimpleData>
 		<SimpleData name="type">Парк-пам'ятка садово-паркового мистецтва місцевого значення
 </SimpleData>
+		<SimpleData name="area">невідомо</SimpleData>
 	</SchemaData></ExtendedData>
       <Polygon><outerBoundaryIs><LinearRing><coordinates>23.5000709,49.3531788,0 23.4998563,49.3527245,0 23.499969,49.3525568,0 23.4998563,49.3523524,0 23.5002264,49.3522807,0 23.5006663,49.3521409,0 23.501074,49.3530006,0 23.5007441,49.3530637,0 23.5006127,49.3528228,0 23.500331,49.3528984,0 23.5004303,49.3531316,0 23.500087,49.3532207,0 23.5000709,49.3531788,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
   </Placemark>
