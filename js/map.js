@@ -175,7 +175,7 @@ d3.csv("data/removed.csv", function(data) {
 
 });
 
-d3.csv("data/removed.csv", function(data) {
+d3.csv("data/new.csv", function(data) {
     data.forEach(function(d){
         d.longitude = +d.longitude;
         d.latitude = +d.latitude;
@@ -293,14 +293,14 @@ checkRemoved.addEventListener('change', function(e) {
 });
 
 //шар з новими деревами
-// const checkNew = document.getElementById('checkNew');
-// checkNew.addEventListener('change', function(e) {
-//     if (e.target.checked) {
-//         newTrees.addTo(mymap);
-//     } else {
-//         mymap.removeLayer(newTrees);
-//     }
-// });
+const checkNew = document.getElementById('checkNew');
+checkNew.addEventListener('change', function(e) {
+    if (e.target.checked) {
+        newTrees.addTo(mymap);
+    } else {
+        mymap.removeLayer(newTrees);
+    }
+});
 
 //шар зі старими деревами
 const checkOld = document.getElementById('checkOld');
