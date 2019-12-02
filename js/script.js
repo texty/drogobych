@@ -1,4 +1,8 @@
 //відповіді форми збираються тут: https://docs.google.com/spreadsheets/d/1MZUQuWk3SkhWqVoakE22nfi-_DGfqBvUPsR9qiEscsk/edit#gid=0
+// $('select#select').on('change', function() {
+//     alert( this.value );
+// });
+
 var agree = false;
 
 var $form = $('form#test-form'),

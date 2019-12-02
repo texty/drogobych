@@ -130,19 +130,23 @@
 
     <div>
         <label>Адреса висадження дерева <br>(вкажіть вулицю, будинок і опишіть місце де висадити дерево)</label><br>
-        <textarea class="required" required name="field_tree_address" ></textarea>
+        <textarea class="required" required name="field_tree_address"></textarea>
     </div>
 
     <div>
         <label>Виберіть дерево виду дерева з випадаючого списку</label><br>
-        <select name="field_dropdown">
-            <option value="">Дуб</option>
-            <option value="">Каштан</option>
-            <option value="" selected>Клен</option>
-            <option value="">Липа</option>
-            <option value="">Ялиця</option>
-            <option value="">Кущі аронії</option>
+        <select id="select" name="field_dropdown">
+            <option value="Дуб">Дуб</option>
+            <option value="Каштан">Каштан</option>
+            <option value="Клен" selected>Клен</option>
+            <option value="Липа">Липа</option>
+            <option value="Ялиця">Ялиця</option>
+            <option value="Кущі аронії">Кущі аронії</option>
         </select>
+    </div>
+
+    <div>
+        <textarea class="required" required name="dropdown_selected"></textarea>
     </div>
 
     <div>
