@@ -181,10 +181,6 @@ d3.csv("data/new.csv", function(data) {
         d.latitude = +d.latitude;
     });
 
-    var nestedData = d3.nest()
-        .key(function(d) { return d.actIdentifier; })
-        .entries(data);
-
     var points = L.layerGroup();
 
     data.forEach(function(d){
@@ -226,12 +222,6 @@ d3.csv("data/old.csv", function(data) {
         d.latitude = +d.latitude;
     });
 
-    // var nestedData = d3.nest()
-    //     .key(function(d) { return d.actIdentifier; })
-    //     .entries(data);
-    //
-    // var points = L.layerGroup();
-
     data.forEach(function(d){
         console.log(d);
         L.marker([d.latitude, d.longitude],  {icon: iconOld } ).addTo(oldTrees)
@@ -268,7 +258,7 @@ d3.csv("data/old.csv", function(data) {
 
 
 //по дефолту показуємо обрізані
-cuttedTrees.addTo(mymap);
+newTrees.addTo(mymap);
 parks.addTo(mymap);
 
 
