@@ -79,43 +79,50 @@
 </div>
 
 <div class="text">
-    <h3>Зелений Дрогобич — це інструмент, що допомагає Міській раді Дрогобича інформувати громадськість про рішення прийняті у сфері озеленення, а громадськості — контролювати ці рішення.
-    </h3>
+    <p>Зелений Дрогобич — це інструмент, що допомагає Міській раді міста Дрогобича інформувати громадян про перебіг озеленення та отримувати від них зворотній зв’язок.</p>
+
+    <p>Головне завдання цього інструменти надати жителям зручний інтерфейс для роботи з даними про озеленення. Вони зможуть побачити результати міської політики з озеленення і забезпечити громадський контроль її виконання. Завдяки формі зворотнього зв’язку, місто буде враховувати побажання жителів коли планувати нові насадження.</p>
+
+    <h2> Для чого місту дерева? </h2>
+
+    <p>Міське озеленення виконує важливу екологічну функцію. Воно допомагає підтримувати місцеву екосистему, стають домівкою для птахів, вбирають зайву вологу, очищають повітря та захищають від спеки. Також зелені зони виконують рекреаційні функції. Там гуляють і відпочивають місцеві жителі. На відміну від багатьох інших просторів у місті — вони доступні для всіх охочих.</p>
+
+    <p>Але не можна просто бездумно засадити усі вулиці деревами. Інколи рослини заважають дорожньому руху та будівництву. Крім того, дерева часом хворіють або висихають. Департамент міського господарства Дрогобицької міської ради, що опікується зеленими насадженнями повинен вести продуману політику щодо озеленення.</p>
+
+    <p>Одна з важливих проблем в управлінні зеленими насадженнями це не правильне обрізання (кронувати) дерев. Близько 20% дерев зараз гине після неправильного кронування. Для того, щоб виправити цю проблему, міська влада Дрогобича співпрацює з представниками біолого-природничого факультету Дрогобицького педагогічного університету ім. І. Франка. Вони будуть проводити тренінги для комунальників щодо правильного догляду за деревами.</p>
+
+    <p>Для того, щоб усі ці заходи були успішними потрібна довіра і співпраця як міських служб, так і активістів. Одна з цілей нашого інструменту – забезпечити співпрацю.</p>
 </div>
 
-<!--<main>-->
-        <form id="check-form">
-            <div class="input-wrap">
-                <label class="checkbox-inline" style="border: 1px solid lightgrey;">
-                    <input id="checkNew" type="checkbox" value="" checked>Саджанці
-                </label>
-            </div>
-            <div class="input-wrap">
-                <label class="checkbox-inline" style="border: 1px solid lightgrey;">
-                    <input id="checkCutted" type="checkbox" value="" >Кроновані дерева
-                </label>
-            </div>
-            <div class="input-wrap">
-                <label class="checkbox-inline" style="border: 1px solid lightgrey;">
-                    <input id="checkRemoved" type="checkbox" value="">Видалені дерева
-                </label>
-            </div>
-            <div class="input-wrap">
-                <label class="checkbox-inline" style="border: 1px solid lightgrey;">
-                    <input id="checkOld" type="checkbox" value="">Природо-заповідні обʼєкти
-                </label>
-            </div>
-            <div class="input-wrap">
-                <label class="checkbox-inline" style="border: 1px solid lightgrey;">
-                    <input id="parks" type="checkbox" value="" checked>Парки
-                </label>
-            </div>
+<form id="check-form">
+    <div class="input-wrap">
+        <label class="checkbox-inline">
+            <input id="checkNew" type="checkbox" value="" checked>Саджанці
+        </label>
+    </div>
+    <div class="input-wrap">
+        <label class="checkbox-inline">
+            <input id="checkCutted" type="checkbox" value="" >Кроновані дерева
+        </label>
+    </div>
+    <div class="input-wrap">
+        <label class="checkbox-inline">
+            <input id="checkRemoved" type="checkbox" value="">Видалені дерева
+        </label>
+    </div>
+    <div class="input-wrap">
+        <label class="checkbox-inline">
+            <input id="checkOld" type="checkbox" value="">Природо-заповідні обʼєкти
+        </label>
+    </div>
+    <div class="input-wrap">
+        <label class="checkbox-inline">
+            <input id="parks" type="checkbox" value="" checked>Парки
+        </label>
+    </div>
+</form>
 
-            <!--<label style="background-color: green; padding: 5px; border: 1px solid lightgrey; border-radius: 5px;">Запропонувати посадити дерево</label>-->
-
-        </form>
-
-        <div id="map"></div>
+<div id="map"></div>
 
 
 <!-- Форма, що відправляє дані в Google Sheets -->
@@ -173,100 +180,108 @@
 
 <!--</form>-->
 
-<h2 class="setwidth">Пропоную посадити дерево:</h2>
+
 <div class="setwidth" id="form-wrapper">
 
-<form id="test-form" class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfjw__lWY6qPEP8LUL_dwjmmh8j6r0vzHg_RwFrS_AkkE1PNQ/formResponse">
-    <!---->
-    <div>
-        <label>ПІБ</label><br>
-        <input name="entry.1989299445"
+    <form id="test-form" class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfjw__lWY6qPEP8LUL_dwjmmh8j6r0vzHg_RwFrS_AkkE1PNQ/formResponse">
+        <h2 class="setwidth">Пропоную посадити дерево:</h2>
+
+        <!---->
+        <div>
+            <label>ПІБ</label><br>
+            <input name="entry.1989299445"
+                   class="required full-width"
+                   type="text"
+                   autocomplete="off"
+                   placeholder=""
+                   required/>
+        </div>
+
+        <!---->
+        <div>
+            <label>Адреса проживання</label><br>
+            <input name="entry.2036776471"
+                   class="required full-width"
+                   type="text"
+                   autocomplete="off"
+                   placeholder=""
+                   required/>
+        </div>
+
+        <!---->
+        <div>
+            <label>Телефон</label><br>
+            <input name="entry.113242539"
+                   class="required full-width"
+                   type="text"
+                   autocomplete="off"
+                   placeholder=""
+                   required/>
+        </div>
+
+        <!---->
+        <div>
+        <label>Адреса електронної пошти</label><br>
+        <input name="entry.1913515127"
                class="required full-width"
-               type="text"
+               type="email"
                autocomplete="off"
                placeholder=""
                required/>
-    </div>
+        </div>
 
-    <!---->
-    <div>
-        <label>Адреса проживання</label><br>
-        <input name="entry.2036776471"
-               class="required full-width"
-               type="text"
-               autocomplete="off"
-               placeholder=""
-               required/>
-    </div>
-
-    <!---->
-    <div>
-        <label>Телефон</label><br>
-        <input name="entry.113242539"
-               class="required full-width"
-               type="text"
-               autocomplete="off"
-               placeholder=""
-               required/>
-    </div>
-
-    <!---->
-    <div>
-    <label>Адреса електронної пошти</label><br>
-    <input name="entry.1913515127"
-           class="required full-width"
-           type="email"
-           autocomplete="off"
-           placeholder=""
-           required/>
-    </div>
-
-    <!---->
-    <div>
-        <label>Адреса висадження дерева <br>(вкажіть вулицю, будинок і опишіть місце де висадити дерево)</label><br>
-        <textarea name="entry.2069250115"
-                  class="required half-width"></textarea>
-    </div>
-
-    <!---->
-    <div>
-    <label>Виберіть дерево виду дерева з випадаючого списку</label><br>
-        <select name="entry.556416439">
-            <option value="Дуб">Дуб</option>
-            <option value="Каштан">Каштан</option>
-            <option value="Клен" >Клен</option>
-            <option value="Липа">Липа</option>
-            <option value="Ялиця">Ялиця</option>
-            <option value="Кущі аронії">Кущі аронії</option>
-        </select>
-    </div>
-
-    <!---->
-    <div>
-    <label>Коментар</label><br>
-            <textarea name="entry.140648810"
+        <!---->
+        <div>
+            <label>Адреса висадження дерева <br>(вкажіть вулицю, будинок і опишіть місце де висадити дерево)</label><br>
+            <textarea name="entry.2069250115"
                       class="required half-width"></textarea>
-    </div>
+        </div>
 
-    <!---->
-    <div id="agreement">
-        <input name="entry.1895596727"
-               value="Даю згоду на обробку персональних даних"
-               type="checkbox"
-               required/>
-        <label>Даю згоду на обробку персональних даних</label><br>
-    </div>
+        <!---->
+        <div>
+        <label>Виберіть дерево виду дерева з випадаючого списку</label><br>
+            <select name="entry.556416439">
+                <option value="Дуб">Дуб</option>
+                <option value="Каштан">Каштан</option>
+                <option value="Клен" >Клен</option>
+                <option value="Липа">Липа</option>
+                <option value="Ялиця">Ялиця</option>
+                <option value="Кущі аронії">Кущі аронії</option>
+            </select>
+        </div>
 
-    <!---->
-    <div>
-    <input type="submit" value="Відправити" />
-    </div>
-</form>
+        <!---->
+        <div>
+        <label>Коментар</label><br>
+                <textarea name="entry.140648810"
+                          class="required half-width"></textarea>
+        </div>
 
+        <!---->
+        <div id="agreement">
+            <input name="entry.1895596727"
+                   value="Даю згоду на обробку персональних даних"
+                   type="checkbox"
+                   required/>
+            <label>Даю згоду на обробку персональних даних</label><br>
+        </div>
+
+        <!---->
+        <div>
+        <input type="submit" value="Відправити" />
+        </div>
+    </form>
+
+    <div id="how-to-use">
+        <h2>Як користуватися інструментом?</h2>
+
+        <p>На карті «шарами» зображено місця де: саджають нові дерева, обрізають або вирубують старі дерева. Крім них там знаходяться дерева-ботанічні пам’ятки та парки міста Дрогобич. Ви можете додавати чи прибирати ті чи інші шари з карти, та дивитися на детальну інформацію про кожне дерево. Для цього достатньо просто на нього натиснути на назву шару у верхній частині карти. </p>
+
+        <p>Дерева на карті відображаються кольоровими іконками. Якщо ви натиснете на інконку, з’являться деталі. Там можна побачити вид дерева, дату, адресу та номер акту за яким відбувалися роботи. Для ботанічних пам’яток та для парків, ви можете також побачити їх фотографію. </p>
+
+        <p>Під картою знаходиться форма зворотнього зв’язку. Використайте її якщо хочете отримати нові дерева на вашій вулиці. У формі потрібно заповнити ваші контактні дані, місце та вид дерева яке ви хочете бачити. Місцева рада врахує ваші побажання коли плануватиме висадження нових дерев. </p>
+    </div>
 </div>
-
-<!--</main>-->
-
 
 <div id="partners-logo">
     <p>Роботу виконано у межах проекту «Ініціатива з розвитку аналітичних центрів» який виконує міжнародний фонд «Відродження» за фінансової підтримки Посольства Швеції в Україні.</p>

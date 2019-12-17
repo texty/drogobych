@@ -281,7 +281,11 @@ body {
   font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
   color: #666;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  line-height: 1.6; }
+
+h2 {
+  margin: 50px auto 20px auto; }
 
 #header {
   margin: 0;
@@ -300,37 +304,13 @@ body {
 .text {
   width: 50%;
   margin: 50px auto;
-  line-height: 1.6; }
+  line-height: 1.6;
+  font-size: 18px; }
+  @media (max-width: 825px) {
+    .text {
+      width: 80%; } }
   .text h3 {
     font-weight: normal; }
-
-/*---------- button -------*/
-#arrow-down {
-  cursor: pointer;
-  text-align: center; }
-  @media (max-width: 800px) {
-    #arrow-down {
-      display: none; } }
-
-.bounce {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite; }
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0); }
-  40% {
-    transform: translateY(-30px); }
-  60% {
-    transform: translateY(-15px); } }
-main {
-  display: grid;
-  grid-template-columns: 70% 30%;
-  grid-template-rows: 50px auto; }
-  @media (max-width: 825px) {
-    main {
-      display: block; } }
 
 #map {
   grid-column: 1/3;
@@ -368,53 +348,48 @@ form#check-form {
     line-height: 1.6;
     border-radius: 5px;
     padding: 5px;
-    margin-right: 50px; }
+    margin-right: 50px;
+    border: 1px solid lightgrey; }
   form#check-form label {
     white-space: nowrap; }
 
-form#test-form {
-  grid-column: 1/2;
-  margin-left: 10px; }
-  form#test-form div {
-    margin-bottom: 20px; }
-  form#test-form input, form#test-form textarea, form#test-form select[name='field_dropdown'], form#test-form #submit-form {
-    margin-top: 5px;
-    padding: 5px; }
-  form#test-form select[name='field_dropdown'] {
-    padding: 5px;
-    font-size: 16px;
-    font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
-    box-shadow: inset 0 1px 0 0 #ffffff;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
-    background-color: #ffffff;
-    border: 1px solid grey;
-    display: inline-block;
-    cursor: pointer;
-    color: #666666;
-    font-weight: bold;
-    text-decoration: none;
-    text-shadow: 0 1px 0 #ffffff; }
-  form#test-form #submit-form {
-    font-size: 16px;
-    font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif; }
+.setwidth {
+  width: 100%;
+  max-width: 1200px; }
 
-button#submit-form {
-  box-shadow: inset 0 1px 0 0 #ffffff;
-  background-color: #ffffff;
-  border: 1px solid lightgrey;
-  display: inline-block;
-  cursor: pointer;
-  color: #666666;
-  font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 8px 24px;
-  text-decoration: none;
-  text-shadow: 0 1px 0 #ffffff;
-  margin-top: 30px !important; }
+#how-to-use {
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto; }
 
-button#submit-form:hover {
-  background-color: lightgrey; }
+#form-wrapper {
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr; }
+  @media (max-width: 800px) {
+    #form-wrapper {
+      display: block;
+      width: auto; } }
+  #form-wrapper form#test-form {
+    grid-column: 1/2;
+    margin-left: 10px; }
+    #form-wrapper form#test-form div {
+      margin-bottom: 20px; }
+    #form-wrapper form#test-form input, #form-wrapper form#test-form textarea, #form-wrapper form#test-form #submit-form {
+      margin-top: 5px;
+      padding: 5px; }
+    #form-wrapper form#test-form .full-width {
+      width: 90%; }
+    #form-wrapper form#test-form .half-width {
+      width: 50%; }
+      @media (max-width: 800px) {
+        #form-wrapper form#test-form .half-width {
+          width: 90%; } }
+    #form-wrapper form#test-form select {
+      margin: 10px 0;
+      padding: 5px 10px; }
+    #form-wrapper form#test-form #agreement {
+      display: flex; }
 
 #partners-logo {
   text-align: center;
@@ -473,36 +448,5 @@ table > tbody > tr > td:nth-child(1) {
 .leaflet-popup-content {
   width: 350px;
   height: auto; }
-
-.setwidth {
-  width: 100%;
-  max-width: 1400px; }
-
-h2 {
-  margin: 50px auto 0 auto; }
-
-#form-wrapper {
-  margin: 30px auto;
-  display: grid;
-  grid-template-columns: 1fr 1.5fr; }
-  @media (max-width: 800px) {
-    #form-wrapper {
-      display: block;
-      width: auto; } }
-  #form-wrapper .full-width {
-    width: 100%; }
-    @media (max-width: 800px) {
-      #form-wrapper .full-width {
-        width: 90%; } }
-  #form-wrapper .half-width {
-    width: 50%; }
-    @media (max-width: 800px) {
-      #form-wrapper .half-width {
-        width: 90%; } }
-  #form-wrapper select {
-    margin: 10px 0;
-    padding: 5px 10px; }
-  #form-wrapper #agreement {
-    display: flex; }
 
 /*# sourceMappingURL=styles.css.map */
