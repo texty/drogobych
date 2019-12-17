@@ -83,23 +83,35 @@
     </h3>
 </div>
 
-<main>
+<!--<main>-->
         <form id="check-form">
-            <label class="checkbox-inline" style="border: 1px solid lightgrey;">
-                <input id="checkNew" type="checkbox" value="" checked>Саджанці
-            </label>
-            <label class="checkbox-inline" style="border: 1px solid lightgrey;">
-                <input id="checkCutted" type="checkbox" value="" >Обрізані дерева
-            </label>
-            <label class="checkbox-inline" style="border: 1px solid lightgrey;">
-                <input id="checkRemoved" type="checkbox" value="">Видалені дерева
-            </label>
-            <label class="checkbox-inline" style="border: 1px solid lightgrey;">
-                <input id="checkOld" type="checkbox" value="">Природо-заповідні обʼєкти
-            </label>
-            <label class="checkbox-inline" style="border: 1px solid lightgrey;">
-                <input id="parks" type="checkbox" value="" checked>Парки
-            </label>
+            <div class="input-wrap">
+                <label class="checkbox-inline" style="border: 1px solid lightgrey;">
+                    <input id="checkNew" type="checkbox" value="" checked>Саджанці
+                </label>
+            </div>
+            <div class="input-wrap">
+                <label class="checkbox-inline" style="border: 1px solid lightgrey;">
+                    <input id="checkCutted" type="checkbox" value="" >Кроновані дерева
+                </label>
+            </div>
+            <div class="input-wrap">
+                <label class="checkbox-inline" style="border: 1px solid lightgrey;">
+                    <input id="checkRemoved" type="checkbox" value="">Видалені дерева
+                </label>
+            </div>
+            <div class="input-wrap">
+                <label class="checkbox-inline" style="border: 1px solid lightgrey;">
+                    <input id="checkOld" type="checkbox" value="">Природо-заповідні обʼєкти
+                </label>
+            </div>
+            <div class="input-wrap">
+                <label class="checkbox-inline" style="border: 1px solid lightgrey;">
+                    <input id="parks" type="checkbox" value="" checked>Парки
+                </label>
+            </div>
+
+            <!--<label style="background-color: green; padding: 5px; border: 1px solid lightgrey; border-radius: 5px;">Запропонувати посадити дерево</label>-->
 
         </form>
 
@@ -107,61 +119,153 @@
 
 
 <!-- Форма, що відправляє дані в Google Sheets -->
-<form id="test-form" name="myForm">
+
+<!--<form id="test-form" name="myForm">-->
+    <!--<div>-->
+        <!--<label>Ім'я</label><br>-->
+        <!--<input class="required" type="text" autocomplete="off" required name="field_name" placeholder=""/>-->
+    <!--</div>-->
+
+    <!--<div>-->
+        <!--<label>Адреса проживання</label><br>-->
+        <!--<input class="required" type="text"  autocomplete="off" required name="field_address" placeholder=""/>-->
+    <!--</div>-->
+
+    <!--<div>-->
+        <!--<label>Телефон</label><br>-->
+        <!--<input class="required" type="text" autocomplete="off" required name="field_phone" placeholder=""/>-->
+    <!--</div>-->
+
+    <!--<div>-->
+        <!--<label>Адреса електронної пошти</label><br>-->
+        <!--<input class="required" type="email" autocomplete="off" required name="field_mail" placeholder="" />-->
+    <!--</div>-->
+
+    <!--<div>-->
+        <!--<label>Адреса висадження дерева <br>(вкажіть вулицю, будинок і опишіть місце де висадити дерево)</label><br>-->
+        <!--<textarea class="required" required name="field_tree_address"></textarea>-->
+    <!--</div>-->
+
+    <!--<div>-->
+        <!--<label>Виберіть дерево виду дерева з випадаючого списку</label><br>-->
+        <!--<select id="select" name="field_dropdown">-->
+            <!--<option value="Дуб">Дуб</option>-->
+            <!--<option value="Каштан">Каштан</option>-->
+            <!--<option value="Клен" selected>Клен</option>-->
+            <!--<option value="Липа">Липа</option>-->
+            <!--<option value="Ялиця">Ялиця</option>-->
+            <!--<option value="Кущі аронії">Кущі аронії</option>-->
+        <!--</select>-->
+    <!--</div>-->
+
+    <!--<div>-->
+        <!--<label>Коментар</label><br>-->
+        <!--<textarea name="field_comment"></textarea>-->
+    <!--</div>-->
+
+    <!--<label class="checkbox">-->
+        <!--<input id="agree" type="checkbox" value="" onclick="personalData()">Даю згоду на обробку персональних даних-->
+    <!--</label>-->
+
+    <!--<div>-->
+        <!--<button type="submit" id="submit-form">Надіслати</button>-->
+    <!--</div>-->
+
+<!--</form>-->
+
+<h2 class="setwidth">Пропоную посадити дерево:</h2>
+<div class="setwidth" id="form-wrapper">
+
+<form id="test-form" class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfjw__lWY6qPEP8LUL_dwjmmh8j6r0vzHg_RwFrS_AkkE1PNQ/formResponse">
+    <!---->
     <div>
-        <label>Ім'я</label><br>
-        <input class="required" type="text" autocomplete="off" required name="field_name" placeholder=""/>
+        <label>ПІБ</label><br>
+        <input name="entry.1989299445"
+               class="required full-width"
+               type="text"
+               autocomplete="off"
+               placeholder=""
+               required/>
     </div>
 
+    <!---->
     <div>
         <label>Адреса проживання</label><br>
-        <input class="required" type="text"  autocomplete="off" required name="field_address" placeholder=""/>
+        <input name="entry.2036776471"
+               class="required full-width"
+               type="text"
+               autocomplete="off"
+               placeholder=""
+               required/>
     </div>
 
+    <!---->
     <div>
         <label>Телефон</label><br>
-        <input class="required" type="text" autocomplete="off" required name="field_phone" placeholder=""/>
+        <input name="entry.113242539"
+               class="required full-width"
+               type="text"
+               autocomplete="off"
+               placeholder=""
+               required/>
     </div>
 
+    <!---->
     <div>
-        <label>Адреса електронної пошти</label><br>
-        <input class="required" type="email" autocomplete="off" required name="field_mail" placeholder="" />
+    <label>Адреса електронної пошти</label><br>
+    <input name="entry.1913515127"
+           class="required full-width"
+           type="email"
+           autocomplete="off"
+           placeholder=""
+           required/>
     </div>
 
+    <!---->
     <div>
         <label>Адреса висадження дерева <br>(вкажіть вулицю, будинок і опишіть місце де висадити дерево)</label><br>
-        <textarea class="required" required name="field_tree_address"></textarea>
+        <textarea name="entry.2069250115"
+                  class="required half-width"></textarea>
     </div>
 
+    <!---->
     <div>
-        <label>Виберіть дерево виду дерева з випадаючого списку</label><br>
-        <select id="select" name="field_dropdown">
+    <label>Виберіть дерево виду дерева з випадаючого списку</label><br>
+        <select name="entry.556416439">
             <option value="Дуб">Дуб</option>
             <option value="Каштан">Каштан</option>
-            <option value="Клен" selected>Клен</option>
+            <option value="Клен" >Клен</option>
             <option value="Липа">Липа</option>
             <option value="Ялиця">Ялиця</option>
             <option value="Кущі аронії">Кущі аронії</option>
         </select>
     </div>
 
+    <!---->
     <div>
-        <label>Коментар</label><br>
-        <textarea name="field_comment"></textarea>
+    <label>Коментар</label><br>
+            <textarea name="entry.140648810"
+                      class="required half-width"></textarea>
     </div>
 
-    <label class="checkbox">
-        <input id="agree" type="checkbox" value="" onclick="personalData()">Даю згоду на обробку персональних даних
-    </label>
-
-    <div>
-        <button type="submit" id="submit-form">Надіслати</button>
+    <!---->
+    <div id="agreement">
+        <input name="entry.1895596727"
+               value="Даю згоду на обробку персональних даних"
+               type="checkbox"
+               required/>
+        <label>Даю згоду на обробку персональних даних</label><br>
     </div>
 
+    <!---->
+    <div>
+    <input type="submit" value="Відправити" />
+    </div>
 </form>
 
+</div>
 
-</main>
+<!--</main>-->
 
 
 <div id="partners-logo">

@@ -311,3 +311,10 @@ checkParks.addEventListener('change', function(e) {
     }
 });
 
+
+var head = jQuery("iframe").contents().find("head");
+var css = '<style type="text/css">' +
+    '.freebirdFormviewerViewEmbedded .freebirdFormviewerViewFormCard { background-color: #fff; -webkit-box-shadow: none;  box-shadow: none;' +
+    '</style>';
+jQuery(head).append(css);
+
