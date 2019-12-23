@@ -75,14 +75,13 @@ path {
 
 //alert
 #alert {
+  margin: 20px auto;
   text-decoration: none;
   color: inherit;
   display: block;
   //font-weight: 800;
   font-size: 20px;
-
   max-width: 600px;
-  margin: 20px auto;
   padding: 20px;
   text-align: center;
   background-color: #ff161682;
@@ -133,6 +132,7 @@ form#check-form {
 .setwidth {
   width: 100%;
   max-width: 1200px;
+
 }
 
 #how-to-use {
