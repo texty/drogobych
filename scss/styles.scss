@@ -163,7 +163,8 @@ form#check-form {
     input, textarea, #submit-form {
       font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
       color: #666;
-      margin-top: 5px;
+      margin-top: 10px;
+      margin-left: 10px;
       padding: 5px;
       font-size: 16px;
     }
@@ -279,6 +280,12 @@ table>tbody>tr>td:nth-child(1) {
   }
 
 
+
+textarea, input {
+
+  border: 1px solid grey !important;
+
+}
 
 
 

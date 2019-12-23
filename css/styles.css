@@ -391,7 +391,8 @@ form#check-form {
     #form-wrapper form#test-form input, #form-wrapper form#test-form textarea, #form-wrapper form#test-form #submit-form {
       font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
       color: #666;
-      margin-top: 5px;
+      margin-top: 10px;
+      margin-left: 10px;
       padding: 5px;
       font-size: 16px; }
     #form-wrapper form#test-form .full-width {
@@ -467,5 +468,8 @@ table > tbody > tr > td:nth-child(1) {
 .leaflet-popup-content {
   width: 350px;
   height: auto; }
+
+textarea, input {
+  border: 1px solid grey !important; }
 
 /*# sourceMappingURL=styles.css.map */
