@@ -73,6 +73,27 @@ path {
   stroke: green;
 }
 
+//alert
+#alert {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  //font-weight: 800;
+  font-size: 20px;
+
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #ff161682;
+  //color: white;
+
+  span {
+
+    border-bottom: 1px dashed black;
+  }
+}
+
 
 
 //чекбокси з типами дерев
@@ -141,8 +162,11 @@ form#check-form {
     }
 
     input, textarea, #submit-form {
+      font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+      color: #666;
       margin-top: 5px;
       padding: 5px;
+      font-size: 16px;
     }
 
     .full-width {
@@ -159,6 +183,9 @@ form#check-form {
     select {
       margin: 10px 0;
       padding: 5px 10px;
+      font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+      color: #666;
+      font-size: 16px;
     }
 
     #agreement {

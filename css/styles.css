@@ -328,6 +328,19 @@ path {
   fill: green;
   stroke: green; }
 
+#alert {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  font-size: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #ff161682; }
+  #alert span {
+    border-bottom: 1px dashed black; }
+
 form#check-form {
   display: flex;
   flex-wrap: wrap;
@@ -376,8 +389,11 @@ form#check-form {
     #form-wrapper form#test-form div {
       margin-bottom: 20px; }
     #form-wrapper form#test-form input, #form-wrapper form#test-form textarea, #form-wrapper form#test-form #submit-form {
+      font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+      color: #666;
       margin-top: 5px;
-      padding: 5px; }
+      padding: 5px;
+      font-size: 16px; }
     #form-wrapper form#test-form .full-width {
       width: 90%; }
     #form-wrapper form#test-form .half-width {
@@ -387,7 +403,10 @@ form#check-form {
           width: 90%; } }
     #form-wrapper form#test-form select {
       margin: 10px 0;
-      padding: 5px 10px; }
+      padding: 5px 10px;
+      font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+      color: #666;
+      font-size: 16px; }
     #form-wrapper form#test-form #agreement {
       display: flex; }
 
