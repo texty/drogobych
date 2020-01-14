@@ -175,7 +175,7 @@ d3.csv("data/removed.csv", function(data) {
 
 });
 
-d3.csv("data/new.csv", function(data) {
+d3.csv("data/new2.csv", function(data) {
     data.forEach(function(d){
         d.longitude = +d.longitude;
         d.latitude = +d.latitude;
