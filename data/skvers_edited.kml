@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="skvers_edited" id="skvers_edited">
+	<SimpleField name="timestamp" type="string"></SimpleField>
+	<SimpleField name="begin" type="string"></SimpleField>
+	<SimpleField name="end" type="string"></SimpleField>
+	<SimpleField name="altitudeMode" type="string"></SimpleField>
+	<SimpleField name="tessellate" type="int"></SimpleField>
+	<SimpleField name="extrude" type="int"></SimpleField>
+	<SimpleField name="visibility" type="int"></SimpleField>
+	<SimpleField name="drawOrder" type="string"></SimpleField>
+	<SimpleField name="icon" type="string"></SimpleField>
+	<SimpleField name="type" type="string"></SimpleField>
+	<SimpleField name="area" type="string"></SimpleField>
+</Schema>
+<Folder><name>skvers_edited</name>
+  <Placemark>
+	<name>Парк ім. Степана Бандери</name>
+	<description>вул. Тараса Шевченка</description>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#skvers_edited">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="icon">bandery.jpg</SimpleData>
+		<SimpleData name="type">Парк-пам'ятка садово-паркового мистецтва місцевого значення</SimpleData>
+		<SimpleData name="area">невідомо</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>23.5062163,49.3533923,0 23.5044943,49.353878,0 23.5041832,49.3533085,0 23.5047411,49.3531897,0 23.5046445,49.3529381,0 23.504843,49.3529136,0 23.5048698,49.3526934,0 23.5062324,49.3529695,0 23.5062163,49.3533923,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Сквер Івана Франка</name>
+	<description>вул. Івана Франка, 22</description>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#skvers_edited">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="icon">franka.jpg</SimpleData>
+		<SimpleData name="type">Парк-пам'ятка садово-паркового мистецтва місцевого значення</SimpleData>
+		<SimpleData name="area">невідомо</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>23.501285,49.3547726,0 23.5009739,49.354231,0 23.5016203,49.3541013,0 23.5013749,49.353652,0 23.5007501,49.3537881,0 23.5005974,49.3536026,0 23.501558,49.3534274,0 23.5018268,49.3538178,0 23.5022077,49.353782,0 23.5025376,49.3544651,0 23.501285,49.3547726,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Сквер на Пилипа Орлика</name>
+	<description>невідомо</description>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#skvers_edited">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="icon">no_photo.png</SimpleData>
+		<SimpleData name="type">невідомо</SimpleData>
+		<SimpleData name="area">невідомо</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>23.512685,49.3552463,0 23.5133341,49.3557704,0 23.5128513,49.3559382,0 23.512685,49.3552463,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Сквер на Чорновола</name>
+	<description>невідомо</description>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#skvers_edited">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="icon">no_photo.png</SimpleData>
+		<SimpleData name="type">невідомо</SimpleData>
+		<SimpleData name="area">невідомо</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>23.5087648,49.3541323,0 23.5087084,49.3539471,0 23.5088828,49.3538248,0 23.5089954,49.3537567,0 23.509041,49.3537707,0 23.5090357,49.3539297,0 23.5090169,49.3540327,0 23.508915,49.3540956,0 23.5087701,49.3541708,0 23.5087648,49.3541323,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Сквер &quot;Садиба Коссаків&quot;</name>
+	<description>невідомо</description>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#skvers_edited">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="icon">no_photo.png</SimpleData>
+		<SimpleData name="type">невідомо</SimpleData>
+		<SimpleData name="area">невідомо</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>23.5021895,49.3565689,0 23.5021412,49.3563278,0 23.5023129,49.3563034,0 23.5023558,49.3564536,0 23.5024765,49.356527,0 23.5025409,49.356686,0 23.5022298,49.3567279,0 23.5021895,49.3565689,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Сквер ім Василя Стефаника</name>
+	<description>невідомо</description>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#skvers_edited">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="icon">no_photo.png</SimpleData>
+		<SimpleData name="type">невідомо</SimpleData>
+		<SimpleData name="area">невідомо</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>23.5054757,49.3505296,0 23.5054569,49.3505785,0 23.5050144,49.350423,0 23.5050439,49.3503968,0 23.5051887,49.3502448,0 23.5054757,49.3505296,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Сквер</name>
+	<description>невідомо</description>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#skvers_edited">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="icon">no_photo.png</SimpleData>
+		<SimpleData name="type">невідомо</SimpleData>
+		<SimpleData name="area">невідомо</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>23.5007576,49.3513017,0 23.5008246,49.3509715,0 23.5009614,49.350691,0 23.5011626,49.3509837,0 23.5012913,49.3512528,0 23.5007576,49.3513017,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Шпихлір</name>
+	<description>невідомо</description>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#skvers_edited">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="icon">no_photo.png</SimpleData>
+		<SimpleData name="type">невідомо</SimpleData>
+		<SimpleData name="area">невідомо</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>23.5151894,49.3529009,0 23.5148031,49.3530198,0 23.5144384,49.352272,0 23.5143847,49.3516919,0 23.5150714,49.3515311,0 23.5155327,49.3521741,0 23.5162623,49.3521182,0 23.5167343,49.3529009,0 23.5152108,49.3532084,0 23.5151894,49.3529009,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>

@@ -80,6 +80,7 @@ var customLayer = L.geoJson(null, {
 });
 
 omnivore.kml('data/parks_edited.kml', null, customLayer).addTo(parks);
+omnivore.kml('data/skvers_edited.kml', null, customLayer).addTo(parks);
 
 
 d3.csv("data/cutted.csv", function(data) {
