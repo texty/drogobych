@@ -34,7 +34,7 @@
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
 	<ExtendedData><SchemaData schemaUrl="#parks_edited">
 		<SimpleData name="extrude">0</SimpleData>
-		<SimpleData name="icon">vasil.jpg</SimpleData>
+		<SimpleData name="icon">vasil.png</SimpleData>
 		<SimpleData name="type">Парк-пам'ятка садово-паркового мистецтва місцевого значення
 </SimpleData>
 		<SimpleData name="area">1.94 Га</SimpleData>
@@ -60,7 +60,7 @@
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
 	<ExtendedData><SchemaData schemaUrl="#parks_edited">
 		<SimpleData name="extrude">0</SimpleData>
-		<SimpleData name="icon">no_photo.png</SimpleData>
+		<SimpleData name="icon">novonarodjenyh.png</SimpleData>
 		<SimpleData name="type">Парк-пам'ятка садово-паркового мистецтва місцевого значення
 </SimpleData>
 		<SimpleData name="area">33 Га</SimpleData>
@@ -73,7 +73,7 @@
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
 	<ExtendedData><SchemaData schemaUrl="#parks_edited">
 		<SimpleData name="extrude">0</SimpleData>
-		<SimpleData name="icon">stud.jpg</SimpleData>
+		<SimpleData name="icon">student.png</SimpleData>
 		<SimpleData name="type">Парк-пам'ятка садово-паркового мистецтва місцевого значення
 </SimpleData>
 		<SimpleData name="area">невідомо</SimpleData>
@@ -99,7 +99,7 @@
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
 	<ExtendedData><SchemaData schemaUrl="#parks_edited">
 		<SimpleData name="extrude">0</SimpleData>
-		<SimpleData name="icon">no_photo.png</SimpleData>
+		<SimpleData name="icon">dendro.jpg</SimpleData>
 		<SimpleData name="type">Парк-пам'ятка садово-паркового мистецтва місцевого значення
 </SimpleData>
 		<SimpleData name="area">невідомо</SimpleData>

@@ -37,7 +37,7 @@
 		<SimpleData name="tessellate">-1</SimpleData>
 		<SimpleData name="extrude">0</SimpleData>
 		<SimpleData name="visibility">-1</SimpleData>
-		<SimpleData name="icon">franka.jpg</SimpleData>
+		<SimpleData name="icon">franka.png</SimpleData>
 		<SimpleData name="type">Парк-пам'ятка садово-паркового мистецтва місцевого значення</SimpleData>
 		<SimpleData name="area">невідомо</SimpleData>
 	</SchemaData></ExtendedData>
