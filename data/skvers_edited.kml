@@ -51,7 +51,7 @@
 		<SimpleData name="tessellate">-1</SimpleData>
 		<SimpleData name="extrude">0</SimpleData>
 		<SimpleData name="visibility">-1</SimpleData>
-		<SimpleData name="icon">no_photo.png</SimpleData>
+		<SimpleData name="icon">Сквер_Орика.PNG</SimpleData>
 		<SimpleData name="type">невідомо</SimpleData>
 		<SimpleData name="area">невідомо</SimpleData>
 	</SchemaData></ExtendedData>
@@ -65,7 +65,7 @@
 		<SimpleData name="tessellate">-1</SimpleData>
 		<SimpleData name="extrude">0</SimpleData>
 		<SimpleData name="visibility">-1</SimpleData>
-		<SimpleData name="icon">no_photo.png</SimpleData>
+		<SimpleData name="icon">Сквер_Чорновола.PNG</SimpleData>
 		<SimpleData name="type">невідомо</SimpleData>
 		<SimpleData name="area">невідомо</SimpleData>
 	</SchemaData></ExtendedData>
@@ -79,7 +79,7 @@
 		<SimpleData name="tessellate">-1</SimpleData>
 		<SimpleData name="extrude">0</SimpleData>
 		<SimpleData name="visibility">-1</SimpleData>
-		<SimpleData name="icon">no_photo.png</SimpleData>
+		<SimpleData name="icon">Сквер_Коссаків.PNG</SimpleData>
 		<SimpleData name="type">невідомо</SimpleData>
 		<SimpleData name="area">невідомо</SimpleData>
 	</SchemaData></ExtendedData>
@@ -93,7 +93,7 @@
 		<SimpleData name="tessellate">-1</SimpleData>
 		<SimpleData name="extrude">0</SimpleData>
 		<SimpleData name="visibility">-1</SimpleData>
-		<SimpleData name="icon">no_photo.png</SimpleData>
+		<SimpleData name="icon">Сквер_Стефаника.PNG</SimpleData>
 		<SimpleData name="type">невідомо</SimpleData>
 		<SimpleData name="area">невідомо</SimpleData>
 	</SchemaData></ExtendedData>
@@ -107,7 +107,7 @@
 		<SimpleData name="tessellate">-1</SimpleData>
 		<SimpleData name="extrude">0</SimpleData>
 		<SimpleData name="visibility">-1</SimpleData>
-		<SimpleData name="icon">no_photo.png</SimpleData>
+		<SimpleData name="icon">Сквер.PNG</SimpleData>
 		<SimpleData name="type">невідомо</SimpleData>
 		<SimpleData name="area">невідомо</SimpleData>
 	</SchemaData></ExtendedData>
@@ -121,7 +121,7 @@
 		<SimpleData name="tessellate">-1</SimpleData>
 		<SimpleData name="extrude">0</SimpleData>
 		<SimpleData name="visibility">-1</SimpleData>
-		<SimpleData name="icon">no_photo.png</SimpleData>
+		<SimpleData name="icon">Шпихлір.jpg</SimpleData>
 		<SimpleData name="type">невідомо</SimpleData>
 		<SimpleData name="area">невідомо</SimpleData>
 	</SchemaData></ExtendedData>
