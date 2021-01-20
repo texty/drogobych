@@ -224,7 +224,6 @@ d3.csv("data/old.csv", function(data) {
     });
 
     data.forEach(function(d){
-        console.log(d);
         L.marker([d.latitude, d.longitude],  {icon: iconOld } ).addTo(oldTrees)
             .bindPopup(
                 '<img style="width: 100%; height: auto;" src="'+ d.url + '"/>' +
