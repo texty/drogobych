@@ -83,7 +83,7 @@ omnivore.kml('data/parks_edited.kml', null, customLayer).addTo(parks);
 omnivore.kml('data/skvers_edited.kml', null, customLayer).addTo(parks);
 
 
-d3.csv("data/cutted.csv", function(data) {
+d3.csv("data/cutted_01_2021.csv", function(data) {
 
     data.forEach(function(d){
         d.longitude = +d.longitude;
@@ -132,7 +132,7 @@ d3.csv("data/cutted.csv", function(data) {
 
 
 
-d3.csv("data/removed.csv", function(data) {
+d3.csv("data/removed_01_2021.csv", function(data) {
     data.forEach(function(d){
         d.longitude = +d.longitude;
         d.latitude = +d.latitude;
