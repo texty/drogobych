@@ -1,6 +1,9 @@
 /**
- * Created by yevheniia on 15.06.19.
+ * лінки на дані:
+ * https://opendata.drohobych-rada.gov.ua/dataset/зелені-насадження-міста
  */
+
+
 
 var iconCutted = L.icon({
     iconUrl: 'img/cuted.png',
@@ -83,7 +86,7 @@ omnivore.kml('data/parks_edited.kml', null, customLayer).addTo(parks);
 omnivore.kml('data/skvers_edited.kml', null, customLayer).addTo(parks);
 
 
-d3.csv("data/cutted_01_2021.csv", function(data) {
+d3.csv("data/cutted_03_2021.csv", function(data) {
 
     data.forEach(function(d){
         d.longitude = +d.longitude;
@@ -132,7 +135,7 @@ d3.csv("data/cutted_01_2021.csv", function(data) {
 
 
 
-d3.csv("data/removed_01_2021.csv", function(data) {
+d3.csv("data/removed_03_2021.csv", function(data) {
     data.forEach(function(d){
         d.longitude = +d.longitude;
         d.latitude = +d.latitude;
